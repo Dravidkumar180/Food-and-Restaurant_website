@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="FoodieHub — fresh food, great taste. Artisan dishes, special offers, culinary heritage and table reservations.">
+<meta name="description" content="Discover the FoodieHub experience: fresh dishes, seasonal favourites, and a warm place to gather. FoodieHub — fresh food, great taste. Artisan dishes, special offers, culinary heritage and table reservations.">
 <title>FoodieHub | Home</title>
+<link rel="preload" as="image" href="assets/burger.jpg">
 <link rel="stylesheet" href="styles.css?v=4a2bed26cc15">
-<script src="script.js?v=ac608b47bd84" defer>
+<link rel="stylesheet" href="home.css?v=05e2cb3161e6">
+<script src="script.js?v=309bb81a421c" defer>
 </script>
 </head>
 <body class="page-home">
@@ -15,7 +17,7 @@
 <a class="logo" href="index.html">
 <span class="glyph" data-icon="cutlery" aria-hidden="true">
 </span>
-<span>FOODIEHUB<small>// SCHEMATIC_V1</small>
+<span>FOODIEHUB<small>FRESH FOOD. GOOD TIMES.</small>
 </span>
 </a>
 <nav class="nav" aria-label="Main navigation">
@@ -37,59 +39,22 @@
 </div>
 </header>
 <main>
-<div class="top-spacer">
-</div>
-<section class="container hero grid cols-2">
-<div>
-<span class="outline-tag">▪ FRESH FOOD, GREAT TASTE</span>
-<h1>DELICIOUS FOOD, MADE<br>WITH LOVE.</h1>
-<p>Discover delicious meals prepared fresh with quality ingredients.<br>Precision culinary craft paired with farm-fresh produce, engineered<br>for unforgettable dine-in and rapid delivery experiences.</p>
-<div class="hero-buttons">
-<a class="button dark" href="menu.html">EXPLORE MENU</a>
-<a class="button" href="menu.html">ORDER NOW</a>
-</div>
-<div class="hero-metrics">
-<div>
-<span>PREPARATION</span>
-<b>&lt; 20 MIN</b>
-</div>
-<div>
-<span>FARM INGREDIENTS</span>
-<b>100% VERIFIED</b>
-</div>
-<div>
-<span>TABLE RATING</span>
-<b>4.9 / 5.0</b>
-</div>
-</div>
-</div>
-<div class="wireframe " >
-<div class="wireframe-badge">
-<span class="glyph" data-icon="burger" aria-hidden="true">
-</span>
-<span>FEATURED FOOD IMAGE</span>
-<small>[ SCHEMATIC WIREFRAME - GOURMET ARTISAN<br>SELECTION ]</small>
-</div>
-</div>
+<section class="container home-hero grid cols-2" id="welcome" aria-labelledby="welcome-title">
+ <div class="hero-copy"><span class="section-kicker">01 / GOOD FOOD. GREAT COMPANY.</span><h1 id="welcome-title">DELICIOUS FOOD,<br>MADE <em>WITH LOVE.</em></h1><p>Fresh ingredients. Bold flavours. Moments worth sharing.<br>Pull up a chair and discover your next favourite dish.</p><div class="hero-buttons"><a class="button dark" href="menu.html">EXPLORE THE MENU <span aria-hidden="true">↗</span></a><a class="button hero-outline" href="contact.html">BOOK A TABLE</a></div><div class="hero-bottom"><span>FRESHLY PREPARED</span><span>THOUGHTFULLY SERVED</span><a href="#categories">SCROLL TO DISCOVER ↓</a></div></div>
+ <div class="hero-visual"><img src="assets/burger.jpg" alt="Freshly prepared cheeseburger with lettuce, tomato and pickles" width="1000" height="750" decoding="async" loading="eager" fetchpriority="high"><div class="hero-image-note"><span class="small">A LITTLE COMFORT. A LOT OF FLAVOUR.</span><strong>Your cravings, <em>well served.</em></strong></div><span class="photo-caption">THE FOODIEHUB EXPERIENCE</span></div>
 </section>
-<section class="container section light border-top">
+<section class="container section categories-section" id="categories" aria-labelledby="categories-title"><div class="section-heading flex"><div><span class="section-kicker">02 / FIND YOUR FAVOURITE</span><h2 id="categories-title">WHAT ARE YOU CRAVING?</h2><p>From the first bite to the last sip, there is something for every mood.</p></div><a class="text-link" href="menu.html">VIEW FULL MENU ↗</a></div><div class="category-grid"><a class="category-card" href="menu.html?category=burgers"><div class="category-image"><img src="assets/burger.jpg" alt="Burgers" width="1000" height="750" decoding="async" loading="lazy"></div><div class="flex"><h3>Burgers</h3><span aria-hidden="true">↗</span></div><p>Stacked with flavour</p></a><a class="category-card" href="menu.html?category=pizzas"><div class="category-image"><img src="assets/pizza.jpg" alt="Pizzas" width="1000" height="750" decoding="async" loading="lazy"></div><div class="flex"><h3>Pizzas</h3><span aria-hidden="true">↗</span></div><p>Straight from the oven</p></a><a class="category-card" href="menu.html?category=pastas"><div class="category-image"><img src="assets/pasta.jpg" alt="Pastas" width="1000" height="750" decoding="async" loading="lazy"></div><div class="flex"><h3>Pastas</h3><span aria-hidden="true">↗</span></div><p>Comfort in every forkful</p></a><a class="category-card" href="menu.html?category=mains"><div class="category-image"><img src="assets/chicken.jpg" alt="Mains" width="1000" height="750" decoding="async" loading="lazy"></div><div class="flex"><h3>Mains</h3><span aria-hidden="true">↗</span></div><p>Made for a proper meal</p></a><a class="category-card" href="menu.html?category=desserts"><div class="category-image"><img src="assets/dessert.jpg" alt="Desserts" width="1000" height="750" decoding="async" loading="lazy"></div><div class="flex"><h3>Desserts</h3><span aria-hidden="true">↗</span></div><p>A sweet little ending</p></a><a class="category-card" href="menu.html?category=drinks"><div class="category-image"><img src="assets/coffee.jpg" alt="Drinks" width="1000" height="750" decoding="async" loading="lazy"></div><div class="flex"><h3>Drinks</h3><span aria-hidden="true">↗</span></div><p>Sip, slow down, enjoy</p></a></div></section>
+<section id="popular" class="container section light border-top">
 <div class="section-heading flex">
 <div>
-<h2>OUR POPULAR DISHES</h2>
+<span class="section-kicker">03 / THE CROWD FAVOURITES</span><h2>OUR POPULAR DISHES</h2>
 <p>Discover our most-loved dishes, freshly prepared for you with culinary precision.</p>
 </div>
-<small>TOTAL ACTIVE ITEMS: 04 // UNIT: INR (₹)</small>
+<a class="text-link" href="menu.html">EXPLORE ALL DISHES ↗</a>
 </div>
 <div class="grid cols-4 popular">
 <article class="product" data-category="burgers">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="burger" aria-hidden="true">
-</span>
-<span>FOOD IMAGE - CLASSIC BURGER</span>
-<small>[ 280 × 192 PX ]</small>
-</div>
-</div>
+<div class="product-picture food-photo"><img src="assets/burger.jpg" alt="Classic cheeseburger" width="1000" height="750" decoding="async" loading="lazy"></div>
 <div class="product-copy">
 <div class="sku flex">
 <span>SKU #B01</span>
@@ -107,14 +72,7 @@
 </div>
 </article>
 <article class="product" data-category="pizzas">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pizza" aria-hidden="true">
-</span>
-<span>FOOD IMAGE - MARGHERITA PIZZA</span>
-<small>[ 280 × 192 PX ]</small>
-</div>
-</div>
+<div class="product-picture food-photo"><img src="assets/pizza.jpg" alt="Golden oven-baked pizza" width="1000" height="750" decoding="async" loading="lazy"></div>
 <div class="product-copy">
 <div class="sku flex">
 <span>SKU #P02</span>
@@ -132,14 +90,7 @@
 </div>
 </article>
 <article class="product" data-category="pastas">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pasta" aria-hidden="true">
-</span>
-<span>FOOD IMAGE - CREAMY PASTA</span>
-<small>[ 280 × 192 PX ]</small>
-</div>
-</div>
+<div class="product-picture food-photo"><img src="assets/pasta.jpg" alt="Fresh basil pesto pasta" width="1000" height="750" decoding="async" loading="lazy"></div>
 <div class="product-copy">
 <div class="sku flex">
 <span>SKU #PA03</span>
@@ -157,14 +108,7 @@
 </div>
 </article>
 <article class="product" data-category="mains">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="cutlery" aria-hidden="true">
-</span>
-<span>FOOD IMAGE - CRISPY CHICKEN</span>
-<small>[ 280 × 192 PX ]</small>
-</div>
-</div>
+<div class="product-picture food-photo"><img src="assets/chicken.jpg" alt="Crispy chicken strips with dipping sauce" width="1000" height="750" decoding="async" loading="lazy"></div>
 <div class="product-copy">
 <div class="sku flex">
 <span>SKU #C04</span>
@@ -183,17 +127,11 @@
 </article>
 </div>
 </section>
-<section class="container section grid cols-2 border-top">
-<div class="wireframe story-photo" >
-<div class="wireframe-badge">
-<span class="glyph" data-icon="grill" aria-hidden="true">
-</span>
-<span>RESTAURANT IMAGE - KITCHEN & DINING AMBIENCE</span>
-</div>
-</div>
+<section id="our-story" class="container section grid cols-2 border-top">
+<div class="story-photo photo-frame"><img src="assets/interior.jpg" alt="Warm restaurant interior with comfortable seating and natural light" width="1000" height="750" decoding="async" loading="lazy"><span class="image-corner-label">YOUR TABLE IS WAITING.</span></div>
 <div class="story-copy">
-<h2>GOOD FOOD, GREAT MEMORIES</h2>
-<p>Our kitchen operates on the fundamental principle that gastronomic excellence originates from uncompromising precision. From sunrise prep to late-night woodfired orders, our culinary artisans bridge farm heritage and contemporary comfort food with transparent technique and genuine passion.</p>
+<span class="section-kicker">04 / MORE THAN A MEAL</span><h2>GOOD FOOD,<br>GREAT MEMORIES.</h2>
+<p>Food tastes better when it brings people together. Our kitchen pairs seasonal ingredients with thoughtful preparation, creating familiar favourites with a little FoodieHub character. Come for a quick bite, stay for the conversation.</p>
 <div class="home-pillars">
 <div class="pillar">
 <span class="glyph" data-icon="leaf" aria-hidden="true">
@@ -223,22 +161,17 @@
 <a class="button" href="about.html">LEARN MORE</a>
 </div>
 </section>
-<section class="container section light border-top">
+<section class="container section signature-section" id="chefs-picks" aria-labelledby="signature-title"><div class="signature-copy"><span class="section-kicker">05 / FROM OUR KITCHEN</span><h2 id="signature-title">A LITTLE PASSION.<br><em>IN EVERY PLATE.</em></h2><p>Thoughtful combinations, careful finishing, and flavours that speak for themselves. Discover the dishes that put our kitchen's personality on the table.</p><a class="button dark" href="menu.html">DISCOVER THE CHEF'S PICKS ↗</a></div><div class="signature-photo"><img src="assets/chef.jpg" alt="Chef carefully finishing a plated dish in a restaurant kitchen" width="1000" height="750" decoding="async" loading="lazy"></div><div class="signature-detail"><img src="assets/salad.jpg" alt="A colourful bowl of fresh vegetables" width="1000" height="750" decoding="async" loading="lazy"><span>SEASONAL INGREDIENTS.<br>THOUGHTFUL DETAILS.</span></div></section>
+<section id="special-offers" class="container section light border-top">
 <div class="section-heading flex">
 <div>
-<h2>SPECIAL OFFERS</h2>
+<span class="section-kicker">06 / BETTER WHEN SHARED</span><h2>SPECIAL OFFERS</h2>
 </div>
-<small>PROMO RULE: ACTIVE // VOUCHER APPLY ONLINE</small>
+<a class="text-link" href="offers.html">SEE ALL OFFERS ↗</a>
 </div>
 <div class="grid cols-2">
 <article class="mini-deal">
-<div class="wireframe " >
-<div class="wireframe-badge">
-<span class="glyph" data-icon="grill" aria-hidden="true">
-</span>
-<span>OFFER IMAGE - FAMILY FEAST</span>
-</div>
-</div>
+<div class="deal-home-photo"><img src="assets/feast.jpg" alt="A generous plate of freshly prepared food" width="1000" height="750" decoding="async" loading="lazy"></div>
 <div class="mini-deal-copy">
 <span class="black-tag">SAVE 25% OFF</span>
 <h3>FAMILY FEAST</h3>
@@ -250,13 +183,7 @@
 </div>
 </article>
 <article class="mini-deal">
-<div class="wireframe " >
-<div class="wireframe-badge">
-<span class="glyph" data-icon="flame" aria-hidden="true">
-</span>
-<span>OFFER IMAGE - WEEKEND SPECIAL</span>
-</div>
-</div>
+<div class="deal-home-photo"><img src="assets/chicken.jpg" alt="Crispy chicken platter to share" width="1000" height="750" decoding="async" loading="lazy"></div>
 <div class="mini-deal-copy">
 <h3>WEEKEND SPECIAL</h3>
 <p>Curated weekend signature platters featuring gourmet woodfired specialties and desserts hand-selected by our head chef.</p>
@@ -268,62 +195,12 @@
 </article>
 </div>
 </section>
-<section class="container section border-top">
+<section class="container section dining-section" id="dining" aria-labelledby="dining-title"><div class="dining-copy"><span class="section-kicker">07 / MAKE AN OCCASION OF IT</span><h2 id="dining-title">GOOD TASTE.<br><em>GREAT ATMOSPHERE.</em></h2><p>Slow evenings, long conversations, and a table filled with your favourites. Make room for a little time together.</p><div class="dining-tags"><span>RELAXED LUNCHES</span><span>DATE NIGHTS</span><span>FAMILY GATHERINGS</span></div><a class="button" href="contact.html">FIND YOUR TABLE ↗</a></div></section>
+<section class="container section home-gallery-section" id="food-gallery" aria-labelledby="gallery-title"><div class="section-heading flex"><div><span class="section-kicker">08 / A TASTE OF THE EXPERIENCE</span><h2 id="gallery-title">FRESH FROM OUR WORLD</h2><p>A little food inspiration, a little atmosphere, and plenty to look forward to.</p></div><a class="text-link" href="gallery.html">EXPLORE GALLERY ↗</a></div><div class="grid cols-3 home-gallery"><div class="gallery-photo" role="button" tabindex="0" data-enlarge="Fresh from the oven" aria-label="Enlarge: Fresh from the oven"><img src="assets/pizza.jpg" alt="Golden oven-baked pizza" width="1000" height="750" decoding="async" loading="lazy"><div class="gallery-photo-caption"><span>Fresh from the oven</span><span aria-hidden="true">↗</span></div></div><div class="gallery-photo" role="button" tabindex="0" data-enlarge="Comfort on a plate" aria-label="Enlarge: Comfort on a plate"><img src="assets/pasta.jpg" alt="Basil pesto pasta with cherry tomatoes" width="1000" height="750" decoding="async" loading="lazy"><div class="gallery-photo-caption"><span>Comfort on a plate</span><span aria-hidden="true">↗</span></div></div><div class="gallery-photo" role="button" tabindex="0" data-enlarge="Moments worth sharing" aria-label="Enlarge: Moments worth sharing"><img src="assets/dining.jpg" alt="Dinner served in a candlelit restaurant" width="1000" height="750" decoding="async" loading="lazy"><div class="gallery-photo-caption"><span>Moments worth sharing</span><span aria-hidden="true">↗</span></div></div><div class="gallery-photo" role="button" tabindex="0" data-enlarge="Something sweet" aria-label="Enlarge: Something sweet"><img src="assets/dessert.jpg" alt="Creamy strawberry desserts" width="1000" height="750" decoding="async" loading="lazy"><div class="gallery-photo-caption"><span>Something sweet</span><span aria-hidden="true">↗</span></div></div><div class="gallery-photo" role="button" tabindex="0" data-enlarge="Take a little pause" aria-label="Enlarge: Take a little pause"><img src="assets/coffee.jpg" alt="Freshly brewed coffee" width="1000" height="750" decoding="async" loading="lazy"><div class="gallery-photo-caption"><span>Take a little pause</span><span aria-hidden="true">↗</span></div></div><div class="gallery-photo" role="button" tabindex="0" data-enlarge="Stay a little longer" aria-label="Enlarge: Stay a little longer"><img src="assets/interior.jpg" alt="Warm modern restaurant interior" width="1000" height="750" decoding="async" loading="lazy"><div class="gallery-photo-caption"><span>Stay a little longer</span><span aria-hidden="true">↗</span></div></div></div></section>
+<section id="guest-reviews" class="container section light border-top">
 <div class="section-heading flex">
 <div>
-<h2>OUR FOOD GALLERY</h2>
-<p>A snapshot of our kitchen creations and dining atmosphere.</p>
-</div>
-</div>
-<div class="grid cols-3 home-gallery">
-<div class="wireframe " role="button" tabindex="0" data-enlarge="BURGER">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="burger" aria-hidden="true">
-</span>
-<span>BURGER</span>
-</div>
-</div>
-<div class="wireframe " role="button" tabindex="0" data-enlarge="PIZZA">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pizza" aria-hidden="true">
-</span>
-<span>PIZZA</span>
-</div>
-</div>
-<div class="wireframe " role="button" tabindex="0" data-enlarge="PASTA">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pasta" aria-hidden="true">
-</span>
-<span>PASTA</span>
-</div>
-</div>
-<div class="wireframe " role="button" tabindex="0" data-enlarge="BURGER">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="burger" aria-hidden="true">
-</span>
-<span>BURGER</span>
-</div>
-</div>
-<div class="wireframe " role="button" tabindex="0" data-enlarge="PIZZA">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pizza" aria-hidden="true">
-</span>
-<span>PIZZA</span>
-</div>
-</div>
-<div class="wireframe " role="button" tabindex="0" data-enlarge="PASTA">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pasta" aria-hidden="true">
-</span>
-<span>PASTA</span>
-</div>
-</div>
-</div>
-</section>
-<section class="container section light border-top">
-<div class="section-heading flex">
-<div>
-<h2>WHAT OUR CUSTOMERS SAY</h2>
+<span class="section-kicker">09 / AROUND THE TABLE</span><h2>WHAT OUR CUSTOMERS SAY</h2>
 <p>Real feedback from our regular guests and food enthusiasts.</p>
 </div>
 <small>AVERAGE SCORE: 4.87 / 5.0 (2,410 ENTRIES)</small>
@@ -364,18 +241,18 @@
 </article>
 </div>
 </section>
-<section class="container section home-contact border-top">
+<section id="visit-us" class="container section home-contact border-top">
 <div class="section-heading flex">
 <div>
-<h2>GET IN TOUCH</h2>
+<span class="section-kicker">10 / WE WILL SAVE YOU A SEAT</span><h2>LET’S MAKE PLANS.</h2>
 <p>We would love to host your next meal or cater your special event.</p>
 </div>
-<small>COMMUNICATION STATUS: ONLINE // EST RESPONSE: &lt; 15M</small>
+
 </div>
-<div class="grid cols-2">
+<div class="booking-shortcut flex"><p>A meal for two, a family celebration, or simply a well-earned dinner.</p><a class="button dark" href="contact.html">MAKE A RESERVATION ↗</a></div><div class="grid cols-2">
 <div>
 <div class="contact-details">
-<div class="eyebrow muted border-top" style="padding-top:14px">LOGISTICAL COORDINATES</div>
+<div class="eyebrow muted border-top" style="padding-top:14px">VISIT FOODIEHUB</div>
 <div class="contact-item">
 <span class="glyph" data-icon="pin" aria-hidden="true">
 </span>
@@ -396,7 +273,7 @@
 <span class="glyph" data-icon="mail" aria-hidden="true">
 </span>
 <div>
-<small>DIGITAL INQUIRIES</small>
+<small>EMAIL</small>
 <strong>reservations@foodiehub.in</strong>
 </div>
 </div>
@@ -409,18 +286,10 @@
 </div>
 </div>
 </div>
-<div class="wireframe map" aria-label="Location map wireframe">
-<div class="map-disc">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pin" aria-hidden="true">
-</span>
-</div>
-</div>
-<span class="map-label">INTERACTIVE LOCATION MAP PLACEHOLDER</span>
-</div>
+<a class="visit-photo" href="contact.html"><img src="assets/dining.jpg" alt="A beautifully plated dish on a restaurant table" width="1000" height="750" decoding="async" loading="lazy"><span>YOUR NEXT GOOD EVENING STARTS HERE. <b>BOOK A TABLE ↗</b></span></a>
 </div>
 <form class="message-form" data-preview-form>
-<div class="eyebrow muted border-top" style="padding-top:14px">MESSAGE TRANSMISSION FORM</div>
+<div class="eyebrow muted border-top" style="padding-top:14px">SEND US A NOTE</div>
 <label for="home-name">YOUR NAME</label>
 <input id="home-name" placeholder="e.g. Aarav Sharma" required>
 <label for="home-email">EMAIL ADDRESS</label>
@@ -444,7 +313,7 @@
 </span>
 <span>FOODIEHUB</span>
 </a>
-<p>High-rigor restaurant discovery and digital ordering architectural blueprint. Engineered for transparent, structured culinary navigation and spatial reservation mapping.</p>
+<p>Fresh food, good company, and a warm place to gather. Explore our menu, find your favourites, and make your next meal a moment worth sharing.</p>
 </div>
 <div class="footer-links">
 <h4>QUICK NAVIGATION</h4>
@@ -478,7 +347,7 @@
 </div>
 </div>
 </div>
-<div class="copyright">© 2024 FOODIEHUB WIREFRAME ARCHITECTURE. ALL RIGHTS RESERVED.</div>
+<div class="copyright">© 2024 FOODIEHUB. ALL RIGHTS RESERVED.</div>
 </div>
 </footer>
 <dialog aria-label="FoodieHub details">
