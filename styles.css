@@ -454,3 +454,57 @@ h2,.section-heading h2{font-size:25px}
  .product-label{right:8px;font-size:7px;max-width:45px}
 }
 
+
+/* Motion and interaction polish; the original page grids and colors are retained. */
+:root{--ease-out:cubic-bezier(.22,1,.36,1)}
+.site-header{position:sticky;top:0;z-index:40;transition:box-shadow .25s ease,background-color .25s ease}
+.site-header.is-scrolled{box-shadow:0 3px 18px #2022220b;background:#fffffff5}
+.reading-progress{position:fixed;left:0;right:0;top:0;height:2px;background:#202222;transform:scaleX(0);transform-origin:left center;z-index:60;pointer-events:none}
+button,.button{transition:background-color .2s ease,color .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s var(--ease-out)}
+button:active,.button:active{transform:translateY(1px)}
+.nav a:before{content:'';position:absolute;left:0;right:0;bottom:7px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease-out)}
+.nav a:hover:before,.nav a:focus-visible:before{transform:scaleX(1)}
+.nav a[aria-current]:before{display:none}
+.product,.mini-deal,.gallery-card,.chef,.value,.deal,.review{transition:transform .35s var(--ease-out),box-shadow .35s ease}
+.wireframe{overflow:hidden}
+.wireframe-badge{transition:transform .5s var(--ease-out),box-shadow .3s ease}
+.expand-label{transition:background-color .2s ease,padding .25s var(--ease-out)}
+[data-enlarge]:focus-visible{outline:2px solid #202222;outline-offset:4px}
+.field input,.field textarea,.field select,.message-form input,.message-form textarea,.promo-entry input,.catalogue-search{transition:background-color .2s ease,border-color .2s ease,box-shadow .2s ease}
+.field input:focus,.field textarea:focus,.field select:focus{background:#f8f8fb;border-bottom-color:#202222;outline:1px solid #d8d9de;outline-offset:0}
+.message-form input:focus,.message-form textarea:focus,.promo-entry input:focus{outline:1px solid #444;outline-offset:0;box-shadow:0 0 0 3px #20222209}
+.catalogue-search:focus-within{box-shadow:0 0 0 1px #85878b}
+.catalogue-search input:focus{outline:none}
+.policy-panel summary{transition:background-color .2s ease}
+.policy-panel summary:hover{background:#e9e9ee}
+.policy-panel summary:after{transition:transform .2s var(--ease-out)}
+.policy-panel details[open]>p{animation:panel-reveal .3s var(--ease-out)}
+.map-disc{transition:transform .35s var(--ease-out)}
+.back-to-top{position:fixed;bottom:24px;right:24px;z-index:35;width:42px;height:42px;padding:0;background:#fff;color:#202222;border:1px solid #b8bbc2;font-size:22px;box-shadow:0 3px 15px #2022220b;animation:control-in .25s var(--ease-out)}
+.back-to-top[hidden]{display:none}
+#notice{bottom:80px;animation:notice-in .25s var(--ease-out)}
+dialog{max-height:calc(100dvh - 48px);overflow:auto;box-shadow:0 16px 70px #0002}
+dialog::backdrop{animation:backdrop-in .2s ease-out}
+.enter-view{animation:content-reveal .7s var(--ease-out) var(--reveal-delay,0ms) both}
+@keyframes content-reveal{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes panel-reveal{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes notice-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes control-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes backdrop-in{from{opacity:0}to{opacity:1}}
+@media(hover:hover) and (pointer:fine){
+ .product:hover,.mini-deal:hover,.gallery-card:hover,.deal:hover{transform:translateY(-5px);box-shadow:0 12px 25px #2022220c}
+ .chef:hover,.value:hover,.review:hover{transform:translateY(-3px);box-shadow:0 8px 22px #2022220a}
+ .product:hover .wireframe-badge,.gallery-card:hover .wireframe-badge,.home-gallery [data-enlarge]:hover .wireframe-badge{transform:scale(1.07)}
+ .gallery-picture:hover .expand-label{padding-left:12px;padding-right:12px}
+ button.dark:hover,.button.dark:hover{background:#292b2b;color:#fff;border-color:#292b2b;box-shadow:0 4px 12px #0001}
+ .back-to-top:hover{transform:translateY(-3px)}
+}
+@media(max-width:640px){
+ .back-to-top{right:16px;bottom:16px;width:38px;height:38px}
+ #notice{right:16px;bottom:68px;max-width:calc(100% - 32px)}
+ .site-header.is-scrolled{box-shadow:0 2px 10px #2022220b}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
