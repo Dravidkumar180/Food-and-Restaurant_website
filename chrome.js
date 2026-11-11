@@ -2,7 +2,7 @@
  'use strict';
  const header=document.querySelector('.site-chrome'),nav=document.querySelector('#primary-navigation'),toggle=document.querySelector('.chrome-menu-toggle'),discover=document.querySelector('.header-discover');
  if(!header||!nav||!toggle)return;
- const mobile=matchMedia('(max-width: 1320px)'),motion=matchMedia('(prefers-reduced-motion: reduce)');
+ const mobile=matchMedia('(max-width: 1000px)'),motion=matchMedia('(prefers-reduced-motion: reduce)');
  function setMenu(open,returnFocus=false){header.classList.toggle('menu-open',open);toggle.setAttribute('aria-expanded',String(open));toggle.querySelector('.chrome-menu-label').textContent=open?'CLOSE':'MENU';if(open&&discover)discover.open=false;if(returnFocus)toggle.focus();}
  // The expanded navigation remains available if JavaScript is disabled.
  toggle.hidden=false;header.classList.add('chrome-ready');
