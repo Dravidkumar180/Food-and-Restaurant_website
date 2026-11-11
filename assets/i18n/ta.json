@@ -925,5 +925,14 @@
   "Location access is not available in this browser. Enter your city instead.": "இந்த உலாவியில் இட அணுகல் இல்லை. உங்கள் நகரத்தை உள்ளிடவும்.",
   "Location selected for this page. Your browser could not save it.": "இந்தப் பக்கத்திற்கு இடம் தேர்ந்தெடுக்கப்பட்டது. உலாவியால் இதைச் சேமிக்க முடியவில்லை.",
   "Set a city or area for your visit. This is a browsing preference; confirm restaurant availability before making plans.": "வருகைக்கான நகரம் அல்லது பகுதியைத் தேர்ந்தெடுக்கவும். இது உலாவல் விருப்பம் மட்டுமே; திட்டமிடும் முன் உணவக வசதியை உறுதிப்படுத்தவும்.",
-  "Your choice is saved only in this browser. GPS coordinates are not sent to a map or translation service.": "உங்கள் தேர்வு இந்த உலாவியில் மட்டுமே சேமிக்கப்படும். GPS ஆயத்தொலைவுகள் வரைபடம் அல்லது மொழிபெயர்ப்புச் சேவைக்கு அனுப்பப்படாது."
+  "Your choice is saved only in this browser. GPS coordinates are not sent to a map or translation service.": "உங்கள் தேர்வு இந்த உலாவியில் மட்டுமே சேமிக்கப்படும். GPS ஆயத்தொலைவுகள் வரைபடம் அல்லது மொழிபெயர்ப்புச் சேவைக்கு அனுப்பப்படாது.",
+  "Choose your language": "உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
+  "Close language selector": "மொழித் தேர்வை மூடு",
+  "Select the language for every page, including menus, forms, and messages.": "உணவுப் பட்டியல், படிவங்கள் மற்றும் செய்திகள் உட்பட எல்லா பக்கங்களுக்குமான மொழியைத் தேர்ந்தெடுக்கவும்.",
+  "Available languages": "கிடைக்கும் மொழிகள்",
+  "Save language": "மொழியைச் சேமிக்கவும்",
+  "Cancel": "ரத்துசெய்",
+  "Your choice is remembered in this browser when you move between pages.": "நீங்கள் பக்கங்களுக்கு இடையே செல்லும்போதும் உங்கள் தேர்வு இந்த உலாவியில் நினைவில் வைக்கப்படும்.",
+  "Your language preference is saved.": "உங்கள் மொழி விருப்பம் சேமிக்கப்பட்டது.",
+  "Language changed for this page. Your browser could not save it.": "இந்தப் பக்கத்திற்கான மொழி மாற்றப்பட்டது. உலாவியால் இதைச் சேமிக்க முடியவில்லை."
 }

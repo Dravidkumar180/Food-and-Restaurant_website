@@ -925,5 +925,14 @@
   "Location access is not available in this browser. Enter your city instead.": "इस ब्राउज़र में स्थान की सुविधा उपलब्ध नहीं है। अपना शहर दर्ज करें।",
   "Location selected for this page. Your browser could not save it.": "इस पेज के लिए स्थान चुन लिया गया है। ब्राउज़र इसे सहेज नहीं सका।",
   "Set a city or area for your visit. This is a browsing preference; confirm restaurant availability before making plans.": "अपनी यात्रा के लिए शहर या क्षेत्र चुनें। यह ब्राउज़िंग की पसंद है; योजना बनाने से पहले रेस्तराँ की उपलब्धता की पुष्टि करें।",
-  "Your choice is saved only in this browser. GPS coordinates are not sent to a map or translation service.": "आपकी पसंद केवल इसी ब्राउज़र में सहेजी जाती है। GPS निर्देशांक किसी मानचित्र या अनुवाद सेवा को नहीं भेजे जाते।"
+  "Your choice is saved only in this browser. GPS coordinates are not sent to a map or translation service.": "आपकी पसंद केवल इसी ब्राउज़र में सहेजी जाती है। GPS निर्देशांक किसी मानचित्र या अनुवाद सेवा को नहीं भेजे जाते।",
+  "Choose your language": "अपनी भाषा चुनें",
+  "Close language selector": "भाषा चयन बंद करें",
+  "Select the language for every page, including menus, forms, and messages.": "मेन्यू, फ़ॉर्म और संदेशों सहित हर पेज के लिए भाषा चुनें।",
+  "Available languages": "उपलब्ध भाषाएँ",
+  "Save language": "भाषा सहेजें",
+  "Cancel": "रद्द करें",
+  "Your choice is remembered in this browser when you move between pages.": "पेज बदलने पर भी इस ब्राउज़र में आपकी पसंद याद रखी जाती है।",
+  "Your language preference is saved.": "आपकी भाषा पसंद सहेज ली गई है।",
+  "Language changed for this page. Your browser could not save it.": "इस पेज की भाषा बदल दी गई है। ब्राउज़र इसे सहेज नहीं सका।"
 }
