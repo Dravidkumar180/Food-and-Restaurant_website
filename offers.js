@@ -19,7 +19,7 @@
     document.querySelector('#plan-subtotal').textContent=money.format(p.subtotal);
     document.querySelector('#plan-saving').textContent=money.format(p.saving);
     document.querySelector('#plan-total').textContent=money.format(p.total);
-    const inquiry=`Please confirm this bundle plan: ${p.count} x ${p.bundle.name}, suggested for ${p.bundle.serves*p.count} people. Planner estimate: ${money.format(p.total)}${appliedCode?' with planner code '+appliedCode:''}. Please confirm availability and final pricing.`;
+    const inquiry=window.siteI18n?.t(`Please confirm this bundle plan: ${p.count} x ${p.bundle.name}, suggested for ${p.bundle.serves*p.count} people. Planner estimate: ${money.format(p.total)}${appliedCode?' with planner code '+appliedCode:''}. Please confirm availability and final pricing.`)||`Please confirm this bundle plan: ${p.count} x ${p.bundle.name}, suggested for ${p.bundle.serves*p.count} people. Planner estimate: ${money.format(p.total)}${appliedCode?' with planner code '+appliedCode:''}. Please confirm availability and final pricing.`;
     document.querySelector('#enquire-offer-plan').href='contact.html?mode=message&inquiry='+encodeURIComponent(inquiry);
   }
   choice.addEventListener('change',render);
@@ -44,5 +44,6 @@
   });
   try{const saved=JSON.parse(localStorage.getItem('foodiehub-offer-plan')||'null');if(saved&&bundles.some(b=>b.id===saved.id)){choice.value=saved.id;quantity.value=String(Math.max(1,Math.min(6,Number.parseInt(saved.quantity,10)||1)));if(saved.code==='TOGETHER10'){code.value=saved.code;appliedCode=saved.code;status.textContent='Saved plan restored with its planner code.'}else status.textContent='Your saved table plan is restored.'}}
   catch{/* A blocked or outdated local save must not prevent planning. */}
+  window.addEventListener('foodiehub:languagechange',render);
   render();
 })();

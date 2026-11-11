@@ -4,6 +4,7 @@
  if(!form)return;
  const fields=form.elements,tabs=[...document.querySelectorAll('[data-contact-tab]')],review=document.querySelector('#contact-review'),reviewText=document.querySelector('#contact-review-text'),status=document.querySelector('#contact-copy-status');
  let mode='table',draft='';
+ window.addEventListener('foodiehub:languagechange',()=>{if(draft){draft=window.siteI18n?.translateDraft(draft)||draft;reviewText.textContent=draft;}});
  const localDate=(date=new Date())=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
  fields.date.min=localDate();
  function edit(){review.hidden=true;form.hidden=false;}
@@ -23,7 +24,7 @@
   event.preventDefault();fields.date.min=localDate();
   if(!form.reportValidity())return;
   draft=`FOODIEHUB — ${mode==='table'?'TABLE ENQUIRY':'MESSAGE'}\n\nName: ${fields.name.value.trim()}\nEmail: ${fields.email.value.trim()}\n${fields.phone.value.trim()?`Phone: ${fields.phone.value.trim()}\n`:''}Topic: ${fields.topic.value}\n${mode==='table'?`Preferred date: ${fields.date.value}\nPreferred time: ${fields.time.value}\nGuests: ${fields.guests.value}\n`:''}\n${fields.notes.value.trim()||'No additional notes.'}\n\nRequest only — not sent or confirmed.`;
-  reviewText.textContent=draft;status.textContent='';form.hidden=true;review.hidden=false;review.setAttribute('tabindex','-1');review.focus({preventScroll:true});
+  draft=window.siteI18n?.translateDraft(draft)||draft;reviewText.textContent=draft;status.textContent='';form.hidden=true;review.hidden=false;review.setAttribute('tabindex','-1');review.focus({preventScroll:true});
  });
  document.querySelector('#contact-edit').addEventListener('click',()=>{edit();fields.name.focus({preventScroll:true});});
  document.querySelector('#contact-copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(draft);status.textContent='Request copied. Share it through your confirmed restaurant contact channel.';}catch{const selection=window.getSelection(),range=document.createRange();range.selectNodeContents(reviewText);selection.removeAllRanges();selection.addRange(range);status.textContent='Select and copy the highlighted request with your device’s copy command.';}});
