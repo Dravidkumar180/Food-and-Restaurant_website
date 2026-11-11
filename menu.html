@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="FoodieHub — fresh food, great taste. Artisan dishes, special offers, culinary heritage and table reservations.">
+<meta name="description" content="Explore nine food categories and eighteen dishes: small plates, burgers, wood-fired pizzas, pasta, bowls, grills, seafood, desserts and drinks.">
 <title>FoodieHub | Menu</title>
 <link rel="stylesheet" href="styles.css?v=4a2bed26cc15">
-<script src="script.js?v=309bb81a421c" defer>
+<link rel="stylesheet" href="menu.css?v=a777e1a3d17d">
+<script src="script.js?v=e3ff4c38d16d" defer>
 </script>
 </head>
 <body class="page-menu">
@@ -15,7 +16,7 @@
 <a class="logo" href="index.html">
 <span class="glyph" data-icon="cutlery" aria-hidden="true">
 </span>
-<span>FOODIEHUB<small>// SCHEMATIC_V1</small>
+<span>FOODIEHUB<small>FRESH FOOD. GOOD TIMES.</small>
 </span>
 </a>
 <nav class="nav" aria-label="Main navigation">
@@ -37,228 +38,19 @@
 </div>
 </header>
 <main>
-<div class="top-spacer">
-</div>
-<section class="intro container ">
-<h1>OUR CULINARY MENU</h1>
-<p>Explore our complete selection of artisan dishes crafted with farm-fresh ingredients.<br>Calibrated architectural formulations engineered for sensory equilibrium and nutritive<br>cadence.</p>
-</section>
-<div class="top-spacer">
-</div>
-<div class="menu-toolbar container">
-<div class="category-tabs" aria-label="Menu categories">
-<button data-category-filter="all" aria-pressed="true" class="dark">[00] ALL<b>24</b>
-</button>
-<button data-category-filter="burgers" aria-pressed="false" class="">[01] BURGERS<b>06</b>
-</button>
-<button data-category-filter="pizzas" aria-pressed="false" class="">[02] PIZZAS<b>04</b>
-</button>
-<button data-category-filter="pastas" aria-pressed="false" class="">[03] PASTAS<b>04</b>
-</button>
-<button data-category-filter="mains" aria-pressed="false" class="">[04] MAINS<b>04</b>
-</button>
-<button data-category-filter="desserts" aria-pressed="false" class="">[05] DESSERTS<b>04</b>
-</button>
-<button data-category-filter="drinks" aria-pressed="false" class="">[06] DRINKS<b>02</b>
-</button>
-</div>
-<label class="catalogue-search">
-<span class="glyph" data-icon="search" aria-hidden="true">
-</span>
-<input id="search" aria-label="Search menu catalogue" placeholder="SEARCH CATALOGUE [SKU/NAME]...">
-</label>
-</div>
-<section class="menu-section container">
-<div class="catalogue">
-<article class="product" data-category="burgers">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="burger" aria-hidden="true">
-</span>
-</div>
-<span class="rating">★ 4.8 / 5.0</span>
-</div>
-<div class="product-copy">
-<h3>ARCHITECTURAL SMASH BURGER</h3>
-<p>Double-seared Angus beef formulation,<br>aged sharp cheddar matrix, lacto-fermented gherkins, charred allium crema<br>on artisan brioche bun.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹420</span>
-</div>
-<button class="dark" data-add="ARCHITECTURAL SMASH BURGER">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<article class="product" data-category="pizzas">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pizza" aria-hidden="true">
-</span>
-</div>
-<span class="rating">★ 4.9 / 5.0</span>
-</div>
-<div class="product-copy">
-<h3>NEAPOLITAN TRUFFLE PIE</h3>
-<p>48-hour sourdough ferment, San Marzano reduction, fresh fior di latte, black summer truffle emulsion, basil chiffonade.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹580</span>
-</div>
-<button class="dark" data-add="NEAPOLITAN TRUFFLE PIE">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<article class="product" data-category="pastas">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pasta" aria-hidden="true">
-</span>
-</div>
-<span class="rating">★ 4.7 / 5.0</span>
-</div>
-<div class="product-copy">
-<span class="product-label">VEG</span>
-<h3>WILD MUSHROOM PAPPARDELLE</h3>
-<p>Handmade bronze-cut egg ribbon pasta, porcini broth reduction, aged Parmigiano Reggiano 24-month flakes, fresh thyme infusion.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹490</span>
-</div>
-<button class="dark" data-add="WILD MUSHROOM PAPPARDELLE">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<article class="product" data-category="mains">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="cutlery" aria-hidden="true">
-</span>
-</div>
-<span class="rating">★ 4.9 / 5.0</span>
-</div>
-<div class="product-copy">
-<h3>PAN-SEARED SALMON SPEC</h3>
-<p>Atlantic salmon fillet, cauliflower silk puree, charred asparagus spears, lemon-caper beurre blanc, dill microgreens.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹650</span>
-</div>
-<button class="dark" data-add="PAN-SEARED SALMON SPEC">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<article class="product" data-category="burgers">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="leaf" aria-hidden="true">
-</span>
-</div>
-<span class="rating">★ 4.6 / 5.0</span>
-</div>
-<div class="product-copy">
-<h3>CRISPY CHICKPEA PATTY</h3>
-<p>Heritage grain and sprouted legume disc, pickled red shallots, roasted garlic tahini drizzle, baby wild arugula on charcoal brioche.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹380</span>
-</div>
-<button class="dark" data-add="CRISPY CHICKPEA PATTY">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<article class="product" data-category="desserts">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="croissant" aria-hidden="true">
-</span>
-</div>
-<span class="rating">★ 4.9 / 5.0</span>
-</div>
-<div class="product-copy">
-<h3>DARK CHOCOLATE MONOLITH</h3>
-<p>Single-origin Ecuadorian ganache slab, smoked sea salt crystals, espresso fluid gel, freeze-dried raspberry dusting.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹290</span>
-</div>
-<button class="dark" data-add="DARK CHOCOLATE MONOLITH">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<article class="product" data-category="drinks">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="glass" aria-hidden="true">
-</span>
-<small>SCHEMATIC // 280X192</small>
-</div>
-<span class="rating">★ 4.8 / 5.0</span>
-</div>
-<div class="product-copy">
-<span class="product-label">COLD-<br>STEEP</span>
-<h3>BOTANICAL CITRUS ELIXIR</h3>
-<p>Cold-pressed yuzu, fermented ginger rhizome, sparkling mountain mineral water, crushed rosemary twig aroma lock.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹220</span>
-</div>
-<button class="dark" data-add="BOTANICAL CITRUS ELIXIR">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<article class="product" data-category="pizzas">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pizza" aria-hidden="true">
-</span>
-<small>SCHEMATIC // 280X192</small>
-</div>
-<span class="rating">★ 4.7 / 5.0</span>
-</div>
-<div class="product-copy">
-<span class="product-label">CLASSIC</span>
-<h3>QUATTRO FORMAGGI CALIBRATION</h3>
-<p>Gorgonzola piccante, fontina d’Aosta, mozzarella di bufala, pecorino romano, hot wildflower honey drizzle, cracked pepper.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹520</span>
-</div>
-<button class="dark" data-add="QUATTRO FORMAGGI CALIBRATION">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<article class="product" data-category="desserts">
-<div class="wireframe product-picture">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="croissant" aria-hidden="true">
-</span>
-</div>
-<span class="rating">★ 4.9 / 5.0</span>
-</div>
-<div class="product-copy">
-<h3>DARK CHOCOLATE MONOLITH</h3>
-<p>Single-origin Ecuadorian ganache slab, smoked sea salt crystals, espresso fluid gel, freeze-dried raspberry dusting.</p>
-<div class="product-bottom flex">
-<div>
-<span class="product-price">₹290</span>
-</div>
-<button class="dark" data-add="DARK CHOCOLATE MONOLITH">+ ADD TO CART</button>
-</div>
-</div>
-</article>
-<p class="no-results" id="no-results" hidden>No dishes match your search.</p>
-</div>
-<div class="pagination">
-<span id="inventory">TOTAL INVENTORY: 24 DISHES</span>
-<div>
-<button disabled>[PREV PAGE]</button>
-<button class="dark" aria-current="page">1</button>
-<button data-pagination>2</button>
-<button data-pagination>3</button>
-<button data-pagination>[NEXT PAGE]</button>
-</div>
-</div>
-</section>
+<section class="menu-editorial-hero container" aria-labelledby="menu-title"><div class="menu-hero-copy"><span class="menu-kicker">THE À LA CARTE EDIT</span><h1 id="menu-title">Good food.<br><em>Endless possibilities.</em></h1><p>Start with a little curiosity. Follow your appetite.<br>Explore a menu of bold bites, comforting plates, and sweet little endings.</p><a class="button dark" href="#menu-browse">FIND YOUR NEXT FAVOURITE <span aria-hidden="true">↓</span></a><div class="menu-hero-stats"><span><strong>09</strong> FOOD CATEGORIES</span><span><strong>18</strong> DISHES TO DISCOVER</span></div></div><div class="menu-hero-image"><img src="assets/menu/menu-hero.jpg" alt="An overhead spread of beautifully prepared dishes and fresh ingredients" width="900" height="675" loading="eager" decoding="async" fetchpriority="high"><span class="menu-image-note">YOUR APPETITE. YOUR ADVENTURE.</span><span class="menu-image-index" aria-hidden="true">THE<br>MENU<br>EDIT.</span></div></section>
+<div class="menu-controls container" id="menu-browse"><div class="menu-controls-top"><div class="menu-category-tabs" role="group" aria-label="Food categories"><button class="dark" data-category-filter="all" aria-pressed="true">All dishes <b>18</b></button><button data-category-filter="small-plates" aria-pressed="false"><span>01</span> Small plates</button><button data-category-filter="burgers" aria-pressed="false"><span>02</span> Burgers</button><button data-category-filter="pizzas" aria-pressed="false"><span>03</span> Wood-fired pizzas</button><button data-category-filter="pastas" aria-pressed="false"><span>04</span> Pasta kitchen</button><button data-category-filter="bowls" aria-pressed="false"><span>05</span> Garden & grain bowls</button><button data-category-filter="grills" aria-pressed="false"><span>06</span> From the grill</button><button data-category-filter="seafood" aria-pressed="false"><span>07</span> Coastal favourites</button><button data-category-filter="desserts" aria-pressed="false"><span>08</span> The sweet finish</button><button data-category-filter="drinks" aria-pressed="false"><span>09</span> Sips & refreshers</button></div></div><div class="menu-controls-bottom"><label class="menu-search-box"><span class="glyph" data-icon="search" aria-hidden="true"></span><input id="search" type="search" aria-label="Search dishes or ingredients" placeholder="Find a dish or ingredient…"></label><label class="menu-diet-label">PREFERENCE <select id="menu-diet" aria-label="Dietary preference"><option value="all">Everything</option><option value="vegetarian">Vegetarian</option><option value="non-vegetarian">Non-vegetarian</option></select></label><span id="inventory" class="menu-results" role="status" aria-live="polite">18 DISHES TO DISCOVER</span></div></div>
+<section class="menu-category container " id="category-small-plates" data-category-section="small-plates" aria-labelledby="heading-small-plates"><div class="menu-category-heading"><span class="menu-kicker">01 / A delicious beginning</span><h2 id="heading-small-plates">Small plates</h2><p>Little plates, bright flavours, and plenty of reasons to share.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="small-plates" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/small-plates-1.jpg" alt="Crisp samosas served with green chilli" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">01</span></div><div class="product-copy"><h3>Spiced Samosa Trio</h3><p>Golden pastry parcels with potato, garden peas, toasted cumin, and tangy tamarind chutney.</p><div class="product-bottom"><span class="product-price">₹240</span><button class="dark" data-add="Spiced Samosa Trio">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="small-plates" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/small-plates-2.jpg" alt="Colourful vegetable rice-paper rolls with dipping sauce" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">02</span></div><div class="product-copy"><h3>Rainbow Rice-paper Rolls</h3><p>Fresh vegetables and soft rice noodles, rolled by hand and served with a creamy sesame dipping sauce.</p><div class="product-bottom"><span class="product-price">₹280</span><button class="dark" data-add="Rainbow Rice-paper Rolls">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<section class="menu-category container menu-category-alt" id="category-burgers" data-category-section="burgers" aria-labelledby="heading-burgers"><div class="menu-category-heading"><span class="menu-kicker">02 / Two hands recommended</span><h2 id="heading-burgers">Burgers</h2><p>Generous layers, toasted buns, and a little beautiful mess.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="burgers" data-diet="non-vegetarian"><div class="menu-dish-photo"><img src="assets/menu/burgers-1.jpg" alt="Two burgers layered with grilled patties and fresh greens" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge non-veg"><span aria-hidden="true"></span>NON-VEGETARIAN</span><span class="menu-dish-number">03</span></div><div class="product-copy"><h3>Smoked Pepper Double</h3><p>Twin grilled patties, pepper relish, melted cheese, crisp greens, and smoky house sauce.</p><div class="product-bottom"><span class="product-price">₹460</span><button class="dark" data-add="Smoked Pepper Double">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="burgers" data-diet="non-vegetarian"><div class="menu-dish-photo"><img src="assets/menu/burgers-2.jpg" alt="A cheeseburger with crisp lettuce and a toasted sesame bun" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge non-veg"><span aria-hidden="true"></span>NON-VEGETARIAN</span><span class="menu-dish-number">04</span></div><div class="product-copy"><h3>The Pickle & Cheddar</h3><p>A juicy beef patty with sharp cheddar, dill pickles, caramelised onion, and mustard mayonnaise.</p><div class="product-bottom"><span class="product-price">₹440</span><button class="dark" data-add="The Pickle & Cheddar">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<section class="menu-category container " id="category-pizzas" data-category-section="pizzas" aria-labelledby="heading-pizzas"><div class="menu-category-heading"><span class="menu-kicker">03 / From the hot stone</span><h2 id="heading-pizzas">Wood-fired pizzas</h2><p>Blistered edges, a delicate base, and toppings that do the talking.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="pizzas" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/pizzas-1.jpg" alt="Wood-fired pizza topped with tomato, mozzarella and basil" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">05</span></div><div class="product-copy"><h3>Chilli & Basil Wood-fired</h3><p>Roasted tomato sauce, creamy mozzarella, fresh basil, and a lively drizzle of chilli oil.</p><div class="product-bottom"><span class="product-price">₹510</span><button class="dark" data-add="Chilli & Basil Wood-fired">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="pizzas" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/pizzas-2.jpg" alt="Thin-crust pizza with leafy greens and melted cheese" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">06</span></div><div class="product-copy"><h3>Spinach Pesto Thin-crust</h3><p>Tender spinach, basil pesto, mozzarella, and a touch of roasted garlic on a crisp thin base.</p><div class="product-bottom"><span class="product-price">₹550</span><button class="dark" data-add="Spinach Pesto Thin-crust">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<section class="menu-category container menu-category-alt" id="category-pastas" data-category-section="pastas" aria-labelledby="heading-pastas"><div class="menu-category-heading"><span class="menu-kicker">04 / Twirl something wonderful</span><h2 id="heading-pastas">Pasta kitchen</h2><p>Silky sauces and satisfying forkfuls. Comfort, thoughtfully made.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="pastas" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/pastas-1.jpg" alt="Linguine with olives, vegetables and herbs" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">07</span></div><div class="product-copy"><h3>Olive & Herb Linguine</h3><p>Linguine tossed with olives, seasonal vegetables, parsley, and a glossy garlic-butter finish.</p><div class="product-bottom"><span class="product-price">₹470</span><button class="dark" data-add="Olive & Herb Linguine">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="pastas" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/pastas-2.jpg" alt="Penne coated in a rich tomato sauce" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">08</span></div><div class="product-copy"><h3>Rustic Tomato Penne</h3><p>Penne folded through slow-cooked tomato sauce with roasted garlic, cracked pepper, and grated cheese.</p><div class="product-bottom"><span class="product-price">₹430</span><button class="dark" data-add="Rustic Tomato Penne">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<section class="menu-category container " id="category-bowls" data-category-section="bowls" aria-labelledby="heading-bowls"><div class="menu-category-heading"><span class="menu-kicker">05 / Colour in every bite</span><h2 id="heading-bowls">Garden & grain bowls</h2><p>Crunch, freshness, and nourishing combinations that leave you feeling good.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="bowls" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/bowls-1.jpg" alt="A colourful bowl of avocado, chickpeas and fresh vegetables" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">09</span></div><div class="product-copy"><h3>Avocado Crunch Bowl</h3><p>Creamy avocado, chickpeas, crisp greens, cherry tomatoes, and toasted seeds with lemon dressing.</p><div class="product-bottom"><span class="product-price">₹390</span><button class="dark" data-add="Avocado Crunch Bowl">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="bowls" data-diet="non-vegetarian"><div class="menu-dish-photo"><img src="assets/menu/bowls-2.jpg" alt="A balanced bowl with soft egg, avocado and roasted vegetables" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge non-veg"><span aria-hidden="true"></span>NON-VEGETARIAN</span><span class="menu-dish-number">10</span></div><div class="product-copy"><h3>Harvest Breakfast Bowl</h3><p>Soft egg, avocado, roasted vegetables, and leafy greens with a bright herb dressing.</p><div class="product-bottom"><span class="product-price">₹420</span><button class="dark" data-add="Harvest Breakfast Bowl">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<section class="menu-category container menu-category-alt" id="category-grills" data-category-section="grills" aria-labelledby="heading-grills"><div class="menu-category-heading"><span class="menu-kicker">06 / A little smoke. A lot of flavour.</span><h2 id="heading-grills">From the grill</h2><p>Patient preparation meets a bold finish. Made for a proper appetite.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="grills" data-diet="non-vegetarian"><div class="menu-dish-photo"><img src="assets/menu/grills-1.jpg" alt="Glazed barbecue ribs with fries and vegetables" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge non-veg"><span aria-hidden="true"></span>NON-VEGETARIAN</span><span class="menu-dish-number">11</span></div><div class="product-copy"><h3>Slow-glazed Barbecue Ribs</h3><p>Tender ribs brushed with a sticky barbecue glaze, accompanied by crisp fries and grilled vegetables.</p><div class="product-bottom"><span class="product-price">₹790</span><button class="dark" data-add="Slow-glazed Barbecue Ribs">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="grills" data-diet="non-vegetarian"><div class="menu-dish-photo"><img src="assets/menu/grills-2.jpg" alt="Sliced grilled steak with a caramelised crust" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge non-veg"><span aria-hidden="true"></span>NON-VEGETARIAN</span><span class="menu-dish-number">12</span></div><div class="product-copy"><h3>Pepper-crusted Striploin</h3><p>Flame-grilled steak, sliced to serve, with black pepper jus and a side of seasonal vegetables.</p><div class="product-bottom"><span class="product-price">₹890</span><button class="dark" data-add="Pepper-crusted Striploin">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<section class="menu-category container " id="category-seafood" data-category-section="seafood" aria-labelledby="heading-seafood"><div class="menu-category-heading"><span class="menu-kicker">07 / Fresh inspiration from the coast</span><h2 id="heading-seafood">Coastal favourites</h2><p>Delicate textures, a squeeze of citrus, and a lighter kind of indulgence.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="seafood" data-diet="non-vegetarian"><div class="menu-dish-photo"><img src="assets/menu/seafood-1.jpg" alt="Cooked salmon served with vegetables and lemon" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge non-veg"><span aria-hidden="true"></span>NON-VEGETARIAN</span><span class="menu-dish-number">13</span></div><div class="product-copy"><h3>Lemon-roasted Salmon</h3><p>A salmon fillet with lemon, fragrant herbs, and tender seasonal vegetables.</p><div class="product-bottom"><span class="product-price">₹720</span><button class="dark" data-add="Lemon-roasted Salmon">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="seafood" data-diet="non-vegetarian"><div class="menu-dish-photo"><img src="assets/menu/seafood-2.jpg" alt="A plated fish fillet with green vegetables and sauce" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge non-veg"><span aria-hidden="true"></span>NON-VEGETARIAN</span><span class="menu-dish-number">14</span></div><div class="product-copy"><h3>Garden Herb Fish Fillet</h3><p>Gently seared fish on a bed of green vegetables with a rich, savoury herb sauce.</p><div class="product-bottom"><span class="product-price">₹680</span><button class="dark" data-add="Garden Herb Fish Fillet">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<section class="menu-category container menu-category-alt" id="category-desserts" data-category-section="desserts" aria-labelledby="heading-desserts"><div class="menu-category-heading"><span class="menu-kicker">08 / Leave a little room</span><h2 id="heading-desserts">The sweet finish</h2><p>An extra spoon is always a good idea. End your meal on a sweeter note.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="desserts" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/desserts-1.jpg" alt="Layered chocolate cake with chocolate cream and ganache" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">15</span></div><div class="product-copy"><h3>Chocolate Celebration Slice</h3><p>A generous slice of layered chocolate cake, finished with chocolate cream and a glossy ganache.</p><div class="product-bottom"><span class="product-price">₹320</span><button class="dark" data-add="Chocolate Celebration Slice">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="desserts" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/desserts-2.jpg" alt="A cookies and cream ice cream sundae with chocolate sauce" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">16</span></div><div class="product-copy"><h3>Cookies & Cream Sundae</h3><p>Vanilla ice cream, crushed chocolate cookies, and rich chocolate sauce, layered into a tall sundae.</p><div class="product-bottom"><span class="product-price">₹290</span><button class="dark" data-add="Cookies & Cream Sundae">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<section class="menu-category container " id="category-drinks" data-category-section="drinks" aria-labelledby="heading-drinks"><div class="menu-category-heading"><span class="menu-kicker">09 / A glass of something good</span><h2 id="heading-drinks">Sips & refreshers</h2><p>Bright, chilled, and ready to pair with whatever you are craving.</p><span class="menu-category-note">TWO GOOD REASONS TO EXPLORE <span aria-hidden="true">↗</span></span></div><div class="catalogue"><article class="product menu-dish" data-category="drinks" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/drinks-1.jpg" alt="A tall glass of freshly pressed citrus juice" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">17</span></div><div class="product-copy"><h3>Citrus Sunrise Press</h3><p>Fresh orange and sweet citrus, pressed and served chilled. A bright, refreshing glass of sunshine.</p><div class="product-bottom"><span class="product-price">₹210</span><button class="dark" data-add="Citrus Sunrise Press">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article><article class="product menu-dish" data-category="drinks" data-diet="vegetarian"><div class="menu-dish-photo"><img src="assets/menu/drinks-2.jpg" alt="Bright citrus drinks served in elegant glasses" width="900" height="675" loading="lazy" decoding="async"><span class="menu-diet-badge veg"><span aria-hidden="true"></span>VEGETARIAN</span><span class="menu-dish-number">18</span></div><div class="product-copy"><h3>Mango Citrus Spritz</h3><p>Mango and fresh citrus lifted with soda and a fragrant orange finish.</p><div class="product-bottom"><span class="product-price">₹240</span><button class="dark" data-add="Mango Citrus Spritz">ADD TO CART <span aria-hidden="true">+</span></button></div></div></article></div></section>
+<div id="no-results" class="menu-empty container" hidden><span class="menu-kicker">A FRESH START</span><h2>Nothing on the table just yet.</h2><p>Try another ingredient, explore a different category, or clear your filters.</p><button class="dark" id="reset-menu">SHOW ALL DISHES</button></div>
+<aside class="menu-closing container"><div><span class="menu-kicker">A NOTE FROM THE KITCHEN</span><h2>Good food is <em>personal.</em></h2><p>Have an allergy or a dietary request? Please speak to our team before ordering so we can help you choose. Vegetarian labels describe the dishes; they do not guarantee the absence of allergens.</p></div><div><span class="menu-kicker">MAKE A MEAL OF IT</span><p>Found something you love?<br>There is a place for you at our table.</p><a class="button dark" href="contact.html">PLAN YOUR VISIT ↗</a></div></aside>
 </main>
 <footer class="site-footer">
 <div class="container footer-inner">
@@ -269,7 +61,7 @@
 </span>
 <span>FOODIEHUB</span>
 </a>
-<p>High-rigor restaurant discovery and digital ordering architectural blueprint. Engineered for transparent, structured culinary navigation and spatial reservation mapping.</p>
+<p>Follow your appetite, discover something new, and find a reason to stay for one more course. Thoughtful food for unhurried moments.</p>
 </div>
 <div class="footer-links">
 <h4>QUICK NAVIGATION</h4>
@@ -303,7 +95,7 @@
 </div>
 </div>
 </div>
-<div class="copyright">© 2024 FOODIEHUB WIREFRAME ARCHITECTURE. ALL RIGHTS RESERVED.</div>
+<div class="copyright">© 2024 FOODIEHUB. ALL RIGHTS RESERVED.</div>
 </div>
 </footer>
 <dialog aria-label="FoodieHub details">

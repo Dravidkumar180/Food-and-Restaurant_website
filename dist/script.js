@@ -28,7 +28,25 @@ document.querySelectorAll('[data-add]').forEach(button=>button.addEventListener(
 document.querySelectorAll('[data-account]').forEach(button=>button.addEventListener('click',()=>{openDialog(button.dataset.account,'Account services are not connected in this static design preview.');if(cart.length){const list=document.createElement('ul');cart.forEach(name=>{const li=document.createElement('li');li.textContent=name;list.append(li)});const h=document.createElement('h3');h.textContent=`YOUR CART (${cart.length})`;const clear=document.createElement('button');clear.textContent='CLEAR CART';clear.addEventListener('click',()=>{cart=[];try{localStorage.removeItem('foodiehub-cart')}catch{}dialog.close();notify('Cart cleared')});dialogBody.append(h,list,clear)}}));
 document.querySelectorAll('[data-enlarge]').forEach(picture=>{function enlarge(){openDialog(picture.dataset.enlarge,picture.querySelector('img')?.alt || 'SCHEMATIC WIREFRAME // HIGH-RES SPEC');const clone=picture.cloneNode(true);clone.removeAttribute('tabindex');clone.removeAttribute('role');clone.removeAttribute('data-enlarge');clone.classList.remove('enter-view');clone.querySelector('.expand-label')?.remove();clone.style.margin='0';dialogBody.append(clone)}picture.addEventListener('click',enlarge);picture.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();enlarge()}})});
 const search=document.querySelector('#search');let category='all';
-function filterMenu(){const query=search.value.toLowerCase().trim();let visible=0;document.querySelectorAll('.catalogue .product').forEach(card=>{const show=(category==='all'||category===card.dataset.category)&&card.textContent.toLowerCase().includes(query);card.hidden=!show;card.style.display=show?'':'none';if(show){visible++; animateElement(card, 'filter-in', Math.min(visible - 1, 5) * 35)}});document.querySelector('#no-results').hidden=visible>0;document.querySelector('#inventory').textContent=category==='all'&&!query?'TOTAL INVENTORY: 24 DISHES':`${visible} DISHES FOUND`}
+function filterMenu(){
+  const query=search.value.toLowerCase().trim();
+  const dietaryPreference=document.querySelector('#menu-diet')?.value || 'all';
+  const cards=[...document.querySelectorAll('.catalogue .product')];
+  let visible=0;
+  cards.forEach(card=>{
+    const show=(category==='all'||category===card.dataset.category)&&
+      (dietaryPreference==='all'||dietaryPreference===card.dataset.diet)&&
+      card.textContent.toLowerCase().includes(query);
+    card.hidden=!show;card.style.display=show?'':'none';
+    if(show){visible++;animateElement(card,'filter-in',Math.min(visible-1,5)*35)}
+  });
+  document.querySelectorAll('[data-category-section]').forEach(section=>{
+    section.hidden=![...section.querySelectorAll('.product')].some(card=>!card.hidden);
+  });
+  document.querySelector('#no-results').hidden=visible>0;
+  document.querySelector('#inventory').textContent=category==='all'&&!query&&dietaryPreference==='all'?
+    cards.length+' DISHES TO DISCOVER':visible+' DISHES FOUND';
+}
 if(search){search.addEventListener('input',filterMenu);document.querySelectorAll('[data-category-filter]').forEach(button=>button.addEventListener('click',()=>{category=button.dataset.categoryFilter;document.querySelectorAll('[data-category-filter]').forEach(tab=>{tab.classList.toggle('dark',tab===button);tab.setAttribute('aria-pressed',String(tab===button))});filterMenu()}));document.querySelectorAll('[data-pagination]').forEach(button=>button.addEventListener('click',()=>notify('The supplied design contains the first page of dishes. Additional catalogue pages are not provided.')))}
 document.querySelectorAll('[data-booking-tab]').forEach(button=>button.addEventListener('click',()=>{const isMessage=button.dataset.bookingTab==='message';document.querySelector('.booking-form').classList.toggle('message-mode',isMessage);document.querySelectorAll('[data-booking-tab]').forEach(tab=>{tab.classList.toggle('dark',tab===button);tab.setAttribute('aria-selected',String(tab===button))});document.querySelector('#submit-booking').textContent=isMessage?'SEND MESSAGE':'CONFIRM TABLE RESERVATION →';document.querySelector('#notes-label').textContent=isMessage?'YOUR MESSAGE *':'SPECIAL SEATING NOTES & DIETARY PROTOCOLS';document.querySelector('#notes').required=isMessage;document.querySelector('#booking-date').required=!isMessage; animateElement(document.querySelector('.booking-form'),'panel-in')}));
 document.querySelectorAll('[data-preview-form]').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();openDialog('REQUEST PREPARED','This is a static design preview. Your request has not been sent to a restaurant.')}));
@@ -42,7 +60,7 @@ const revealTargets = document.querySelectorAll(
   '.section-heading, .hero > div, .intro h1, .intro > p, .heritage > div, ' +
   '.story-copy, .product, .mini-deal, .gallery-card, .home-gallery > div, ' +
   '.review, .chef, .value, .deal, .promo-panel, .policy-panel, .banquet-panel, ' +
-  '.contact-details, .booking-panel, .message-form, .catering-note, .stat, .category-card, .signature-copy, .signature-photo, .dining-copy, .visit-photo'
+  '.contact-details, .booking-panel, .message-form, .catering-note, .stat, .category-card, .signature-copy, .signature-photo, .dining-copy, .visit-photo, .menu-category-heading'
 );
 let revealObserver;
 function setUpReveals() {
@@ -150,9 +168,21 @@ bookingTabs.forEach((tab, index) => {
 
 // Food categories on the home page open the corresponding menu filter.
 if (search) {
-  const requestedCategory = new URLSearchParams(window.location.search).get('category');
+  const routeCategory = new URLSearchParams(window.location.search).get('category');
+  const requestedCategory = routeCategory === 'mains' ? 'grills' : routeCategory;
   if (requestedCategory) {
     const requestedTab = [...document.querySelectorAll('[data-category-filter]')].find(tab => tab.dataset.categoryFilter === requestedCategory);
     requestedTab?.click();
   }
 }
+
+// Menu preferences combine with category and ingredient search.
+document.querySelector('#menu-diet')?.addEventListener('change',filterMenu);
+document.querySelector('#reset-menu')?.addEventListener('click',()=>{
+  search.value='';
+  const preference=document.querySelector('#menu-diet');
+  if(preference)preference.value='all';
+  document.querySelector('[data-category-filter="all"]')?.click();
+  search.focus({preventScroll:true});
+  document.querySelector('#menu-browse')?.scrollIntoView({behavior:reducedMotion.matches?'instant':'smooth',block:'start'});
+});
