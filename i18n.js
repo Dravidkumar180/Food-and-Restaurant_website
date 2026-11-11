@@ -2,7 +2,7 @@
 (() => {
  'use strict';
  const catalogs=window.FOODIEHUB_TRANSLATIONS||{},control=document.querySelector('#header-language-button');
- if(!control)return;
+ if(!control&&!document.querySelector('#account-form'))return;
  const normalize=value=>String(value).replace(/\s+/g,' ').trim();
  const textRecords=new WeakMap(),attributeRecords=new WeakMap();
  const sources=Object.keys(catalogs.ta||{}),folded=new Map(sources.map(key=>[key.toLocaleLowerCase('en'),key]));
