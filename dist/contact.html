@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="styles.css?v=4a2bed26cc15">
 <script src="script.js?v=b6a8f492be82" defer>
 </script>
+<link rel="stylesheet" href="contact.css?v=01a0eb87b2ac">
+<script src="contact.js?v=2a7c0f8d7c8d" defer></script>
 </head>
 <body class="page-contact">
 <header class="site-header">
@@ -36,182 +38,14 @@
 </div>
 </div>
 </header>
-<main>
-<div class="top-spacer">
-</div>
-<section class="intro container contact-intro">
-<h1>GET IN TOUCH & TABLE<br>RESERVATIONS</h1>
-<p>We would love to host your next meal or cater your special event with culinary<br>precision. Direct telemetry and table booking protocols below.</p>
-</section>
-<section class="container grid contact-layout">
-<div>
-<div class="contact-details">
-<div class="contact-item">
-<span class="glyph" data-icon="pin" aria-hidden="true">
-</span>
-<div>
-<small>PHYSICAL LOCATION</small>
-<strong>Sector 7, Monoline Boulevard, Terminal Core</strong>
-<p>Central Gastronomic Plaza, Floor 02, Bay 14</p>
-</div>
-</div>
-<div class="contact-item">
-<span class="glyph" data-icon="phone" aria-hidden="true">
-</span>
-<div>
-<small>TELEMETRY & VOICE COMM</small>
-<strong>+1 (800) 555-FOODIE</strong>
-<p>Direct Terminal Switchboard // Ext: 409</p>
-</div>
-</div>
-<div class="contact-item">
-<span class="glyph" data-icon="mail" aria-hidden="true">
-</span>
-<div>
-<small>ELECTRONIC PACKET DISPATCH</small>
-<strong>dispatch@foodiehub.internal</strong>
-<p>Inquiries, Private Bookings & Corporate Galas</p>
-</div>
-</div>
-<div class="contact-item">
-<span class="glyph" data-icon="clock" aria-hidden="true">
-</span>
-<div>
-<small>KITCHEN SERVICE HOURS</small>
-<strong>MON - SUN // 11:00 AM – 11:30 PM</strong>
-<div class="last-order flex">
-<span>LAST ORDER DISPATCH:</span>
-<b>23:00 HRS</b>
-</div>
-</div>
-</div>
-</div>
-<div class="map-wrap">
-<div class="wireframe map" aria-label="Location map wireframe">
-<div class="map-disc">
-<div class="wireframe-badge">
-<span class="glyph" data-icon="pin" aria-hidden="true">
-</span>
-</div>
-</div>
-<span class="map-label">MAP</span>
-<div class="map-zoom">
-<button data-zoom="1" aria-label="Zoom in">+</button>
-<button data-zoom="-1" aria-label="Zoom out">-</button>
-</div>
-</div>
-<div class="map-caption flex">
-<span>PARKING AVAILABILITY:</span>
-<a href="https://maps.google.com/?q=Central+Gastronomic+Plaza" target="_blank" rel="noopener">OPEN EXTERNAL GPS VECTOR &nbsp; ↗</a>
-</div>
-</div>
-<div class="catering-note">
-<h4>CATERING & PRIVATE SALON PROTOCOL</h4>
-<p>For executive gatherings greater than 10 seats, dietary pre-sequencing or specialized culinary curation, dispatch requirements to our chef directorate via the dispatch terminal or electronic comms packet.</p>
-</div>
-</div>
-<div class="booking-panel">
-<div class="booking-tabs" role="tablist" aria-label="Contact options">
-<button class="dark" role="tab" aria-selected="true" data-booking-tab="table">■ &nbsp;[01] BOOK A TABLE <span>ACTIVE DISPATCH</span>
-</button>
-<button role="tab" aria-selected="false" data-booking-tab="message">SEND A MESSAGE</button>
-</div>
-<form class="booking-form" data-preview-form>
-<div class="fields">
-<div class="field ">
-<label for="guest-name">GUEST NAME *<span>[FULL IDENTITY]</span>
-</label>
-<input id="guest-name" name="guest-name" type="text" placeholder="e.g. Dr. Julian Vance" required >
-</div>
-<div class="field ">
-<label for="guest-email">EMAIL ADDRESS *<span>[CONFIRMATION PACKET]</span>
-</label>
-<input id="guest-email" name="guest-email" type="email" placeholder="name@domain.com" required >
-</div>
-<div class="field ">
-<label for="guest-phone">PHONE NUMBER *<span>[SMS TELEMETRY]</span>
-</label>
-<input id="guest-phone" name="guest-phone" type="tel" placeholder="+1 (555) 000-0000" required >
-</div>
-<div class="field booking-only">
-<label for="guest-count">NUMBER OF GUESTS *<span>[PARTY 1-10]</span>
-</label>
-<select id="guest-count" name="guest-count">
-<option >1 GUEST // STANDARD BOOTH</option>
-<option selected>2 GUESTS // STANDARD BOOTH</option>
-<option >3 GUESTS // STANDARD BOOTH</option>
-<option >4 GUESTS // STANDARD BOOTH</option>
-<option >5 GUESTS // DINING TABLE</option>
-<option >6 GUESTS // DINING TABLE</option>
-<option >7 GUESTS // DINING TABLE</option>
-<option >8 GUESTS // DINING TABLE</option>
-<option >9 GUESTS // DINING TABLE</option>
-<option >10 GUESTS // DINING TABLE</option>
-</select>
-</div>
-<div class="field booking-only">
-<label for="booking-date">CALENDAR DATE *<span>[YYYY-MM-DD]</span>
-</label>
-<input id="booking-date" name="booking-date" type="date" placeholder="" required value="2026-10-29">
-</div>
-<div class="field booking-only">
-<label for="booking-time">TIME SLOT DROPDOWN *<span>[24HR CADENCE]</span>
-</label>
-<select id="booking-time" name="booking-time">
-<option >11:00 HRS // DINING SITTING</option>
-<option >12:30 HRS // DINING SITTING</option>
-<option >14:00 HRS // DINING SITTING</option>
-<option >15:30 HRS // DINING SITTING</option>
-<option >17:00 HRS // DINING SITTING</option>
-<option selected>18:30 HRS // FIRST DINING SITTING</option>
-<option >20:00 HRS // DINING SITTING</option>
-<option >21:30 HRS // DINING SITTING</option>
-</select>
-</div>
-<div class="field full">
-<label for="notes">
-<span id="notes-label">SPECIAL SEATING NOTES & DIETARY PROTOCOLS</span>
-<span>[OPTIONAL / 500 CHARS]</span>
-</label>
-<textarea id="notes" name="notes" maxlength="500" placeholder="Indicate allergies, seating quadrant preferences (Window, Kitchen View, Quiet Corner), or anniversary announcements...">
-</textarea>
-</div>
-</div>
-<div class="table-note flex booking-only">
-<span>ⓘ &nbsp; TABLE SELECTION: AUTOMATIC MONOLINE CAD OPTIMIZATION</span>
-<b>GRACE PERIOD: 15 MINS</b>
-</div>
-<div class="booking-bottom flex">
-<span class="security-label"><span class="glyph" data-icon="lock" aria-hidden="true"></span>[ENCRYPTION: 256-BIT SSL TERMINAL]</span>
-<button class="dark" id="submit-booking">CONFIRM TABLE RESERVATION →</button>
-</div>
-</form>
-</div>
-</section>
-<section class="container grid cols-4 restaurant-stats">
-<div class="stat">
-<span class="eyebrow">PEAK SEATING</span>
-<strong>120 SEATS</strong>
-<p>Main Dining, Salon & Chef Counter</p>
-</div>
-<div class="stat">
-<span class="eyebrow">TURN TIMING</span>
-<strong>90 MINS</strong>
-<p>Standard Tasting Sequence Cadence</p>
-</div>
-<div class="stat">
-<span class="eyebrow">CELLAR NODES</span>
-<strong>450+ SKU</strong>
-<p>Temperature Regulated Biodynamic Stock</p>
-</div>
-<div class="stat">
-<span class="eyebrow">PROTOCOL CODE</span>
-<strong>ISO-22000</strong>
-<p>Gastronomic Hygiene Verified</p>
-</div>
-</section>
-<div class="bottom-space">
-</div>
+<main class="contact-main">
+<section class="contact-hero"><div class="contact-hero-photo"><img src="assets/contact/welcome.jpg" alt="A chef carefully arranging small plates for service" width="1400" height="1000" loading="eager" decoding="async" fetchpriority="high"></div><div class="container"><div class="contact-hero-copy"><span class="contact-kicker">01 / A LITTLE CONVERSATION, A LOVELY MEAL</span><h1>Good evenings<br>begin with<br><em>hello.</em></h1><p>A table for your favourite people. A celebration taking shape. Or a question before you visit. Start the conversation here.</p><a class="button contact-primary" href="#request">LET’S MAKE A PLAN <span aria-hidden="true">↗</span></a><span class="contact-hero-foot">YOUR NEXT FOODIEHUB MOMENT STARTS HERE</span></div></div><span class="contact-photo-note">THE CARE BEHIND EVERY WELCOME</span></section>
+<section class="contact-paths container" aria-labelledby="paths-title"><div class="contact-heading"><span class="contact-kicker">02 / HOW CAN WE HELP?</span><h2 id="paths-title">Every reason to<br><em>get in touch.</em></h2><p>Choose what brings you here. We’ll help you organise the details that matter.</p></div><div class="contact-path-grid"><a class="contact-path" href="#request" data-contact-mode="table"><span class="contact-path-number">01<span aria-hidden="true">↗</span></span><h3>A seat at the table</h3><p>Choose a day, a time, and the people you’re bringing.</p><b>PLAN A VISIT</b></a><a class="contact-path" href="#request" data-contact-mode="message"><span class="contact-path-number">02<span aria-hidden="true">↗</span></span><h3>A question or a thought</h3><p>Ask about a dish, share feedback, or tell us what would make your visit easier.</p><b>LEAVE A NOTE</b></a><a class="contact-path" href="#request" data-contact-mode="group"><span class="contact-path-number">03<span aria-hidden="true">↗</span></span><h3>A bigger gathering</h3><p>Bring your occasion into focus with a few details about your group.</p><b>TALK OCCASIONS</b></a></div></section>
+<section class="contact-request" id="request" aria-labelledby="request-title"><div class="container contact-request-grid"><div class="contact-request-intro"><span class="contact-kicker">03 / THE DETAILS MAKE THE DIFFERENCE</span><h2 id="request-title">Tell us what<br><em>you have in mind.</em></h2><p>Use the form to put your plans together. You can review and copy your request before sharing it with the restaurant.</p><div class="contact-side-photo"><img src="assets/contact/place-setting.jpg" alt="A long table laid with linen, glassware and greenery" width="1400" height="1000" loading="lazy" decoding="async"></div><p class="contact-small">A request is a starting point. Availability and arrangements need confirmation from the team.</p></div><div class="contact-form-card"><div class="contact-form-tabs" role="tablist" aria-label="Request type"><button type="button" role="tab" id="contact-table-tab" aria-selected="true" aria-controls="contact-form-panel" data-contact-tab="table">PLAN A TABLE</button><button type="button" role="tab" id="contact-message-tab" aria-selected="false" aria-controls="contact-form-panel" tabindex="-1" data-contact-tab="message">WRITE A MESSAGE</button></div><div id="contact-form-panel" role="tabpanel" aria-labelledby="contact-table-tab"><form id="contact-request-form"><div class="contact-fields"><label>Your name <span>*</span><input name="name" autocomplete="name" placeholder="How should we address you?" required maxlength="80"></label><label>Email address <span>*</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="120"></label><label>Phone <span>OPTIONAL</span><input name="phone" type="tel" autocomplete="tel" placeholder="Include your country code" maxlength="30"></label><label>What is this about?<select name="topic"><option>A table enquiry</option><option>A group occasion</option><option>Dietary or accessibility needs</option><option>A general question</option><option>Feedback about a visit</option></select></label><label data-contact-reservation>Preferred date <span>*</span><input type="date" name="date" required></label><label data-contact-reservation>Preferred time <span>*</span><select name="time" required><option value="">Choose a time</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option><option>22:00</option></select></label><label data-contact-reservation>Number of guests <span>*</span><input name="guests" type="number" min="1" max="100" step="1" value="2" required></label><label class="contact-notes">A little more detail <span id="contact-char-count">0 / 1000</span><textarea name="notes" id="contact-notes" maxlength="1000" rows="4" placeholder="An occasion, seating preferences, dietary needs, or a question you would like to ask…"></textarea></label></div><div class="contact-form-bottom"><p>Your details stay in this page until you choose to copy or download them. This form does not send a booking.</p><button class="contact-primary" type="submit">REVIEW MY REQUEST <span aria-hidden="true">↗</span></button></div></form><div id="contact-review" hidden aria-live="polite"><span class="contact-kicker">YOUR REQUEST / READY TO REVIEW</span><h3>A thoughtful plan,<br>all in one place.</h3><pre id="contact-review-text"></pre><p>This request has not been sent. Share it through a confirmed restaurant contact channel; your table is only reserved once the team confirms.</p><div class="contact-review-actions"><button type="button" id="contact-copy">COPY REQUEST</button><button type="button" id="contact-download">DOWNLOAD .TXT</button><button type="button" id="contact-edit">EDIT DETAILS</button></div><p id="contact-copy-status" role="status"></p></div></div></div></div></section>
+<section class="contact-arrival container"><div class="contact-arrival-photo"><img src="assets/contact/terrace.jpg" alt="A restaurant dining space prepared for guests" width="1400" height="1000" loading="lazy" decoding="async"></div><div class="contact-arrival-copy"><span class="contact-kicker">04 / MAKE YOURSELF AT HOME</span><h2>A little planning.<br><em>An easier arrival.</em></h2><p>Let us know what helps you feel comfortable, from a quieter table to extra space for your group.</p><div class="contact-arrival-items"><div><span>BEFORE YOU SET OFF</span><h3>Confirm your destination</h3><p>Check the restaurant address and your agreed arrival time with the team before travelling.</p></div><div><span>COME AS YOU ARE</span><h3>Share your access needs</h3><p>Include step-free access, mobility requirements, or room for a pushchair in your enquiry.</p></div><div><span>A CHANGE OF PLANS?</span><h3>Keep everyone in the loop</h3><p>If your time or party size changes, contact the team using your confirmed booking details.</p></div></div><a class="contact-text-link" href="#request" data-contact-mode="message" data-contact-topic="Dietary or accessibility needs">ASK ABOUT YOUR VISIT ↗</a></div></section>
+<section class="contact-occasion"><div class="contact-occasion-image"><img src="assets/contact/occasion.jpg" alt="An elegantly set celebration table with folded napkins and flowers" width="1400" height="1000" loading="lazy" decoding="async"></div><div class="container"><div class="contact-occasion-copy"><span class="contact-kicker">05 / SOME DAYS DESERVE A LITTLE MORE</span><h2>Your people.<br>Your occasion.<br><em>Let’s talk details.</em></h2><p>From a birthday supper to a team catch-up, start with the date, a rough guest count, and the atmosphere you have in mind.</p><div class="contact-occasion-tags"><button data-contact-occasion="A birthday meal">BIRTHDAYS ↗</button><button data-contact-occasion="A team gathering">TEAM GATHERINGS ↗</button><button data-contact-occasion="A family celebration">FAMILY CELEBRATIONS ↗</button></div><span class="contact-small">Menus, seating and any special arrangements are subject to confirmation.</span></div></div></section>
+<section class="contact-faq container"><div class="contact-heading"><span class="contact-kicker">06 / A FEW HELPFUL ANSWERS</span><h2>Before you ask,<br><em>you might wonder.</em></h2><p>A few things to include so your enquiry starts in the right place.</p></div><div class="contact-faq-list"><details><summary><span class="contact-faq-number">01</span>Does this form confirm my table?<span class="contact-faq-plus" aria-hidden="true">+</span></summary><p>No. It prepares a request you can copy or download. Contact the restaurant through a confirmed channel and wait for the team to confirm availability.</p></details><details><summary><span class="contact-faq-number">02</span>What should I mention about food allergies?<span class="contact-faq-plus" aria-hidden="true">+</span></summary><p>List specific allergens and the severity of each allergy. Discuss cross-contact and preparation directly with the team before ordering; a note alone does not establish that a dish is suitable.</p></details><details><summary><span class="contact-faq-number">03</span>Can I enquire for a larger group?<span class="contact-faq-plus" aria-hidden="true">+</span></summary><p>Yes. Select “A group occasion” and include a rough headcount, preferred date, budget range, and any seating or menu preferences you want to discuss.</p></details><details><summary><span class="contact-faq-number">04</span>What if I need to change an existing booking?<span class="contact-faq-plus" aria-hidden="true">+</span></summary><p>Use the contact details provided with your booking confirmation. Include the name, date, and reference so the team can identify your plans.</p></details><details><summary><span class="contact-faq-number">05</span>Can I ask about access or a quieter table?<span class="contact-faq-plus" aria-hidden="true">+</span></summary><p>Absolutely. Describe what would make the visit more comfortable. Ask the team to confirm the available facilities and seating before you travel.</p></details></div></section>
+<section class="contact-invitation"><div class="contact-invitation-photo"><img src="assets/contact/cafe.jpg" alt="Friends sharing a relaxed evening around a restaurant table" width="1400" height="1000" loading="lazy" decoding="async"></div><div class="container contact-invitation-inner"><span class="contact-kicker">07 / THERE IS ALWAYS A REASON</span><h2>Make room for<br><em>a good conversation.</em></h2><p>We’ll leave the inspiration here. You bring the people and the plans.</p><div><a class="button contact-primary" href="#request">START YOUR ENQUIRY ↗</a><a class="contact-text-link" href="menu.html">FIND YOUR NEXT FAVOURITE ↗</a></div></div></section>
 </main>
 <footer class="site-footer">
 <div class="container footer-inner">
@@ -222,7 +56,7 @@
 </span>
 <span>FOODIEHUB</span>
 </a>
-<p>High-rigor restaurant discovery and digital ordering architectural blueprint. Engineered for transparent, structured culinary navigation and spatial reservation mapping.</p>
+<p>A good meal starts with feeling welcome. Discover the food, plan your visit, and make space for the people you love.</p>
 </div>
 <div class="footer-links">
 <h4>QUICK NAVIGATION</h4>
@@ -256,7 +90,7 @@
 </div>
 </div>
 </div>
-<div class="copyright">© 2024 FOODIEHUB WIREFRAME ARCHITECTURE. ALL RIGHTS RESERVED.</div>
+<div class="copyright">© 2024 FOODIEHUB. ALL RIGHTS RESERVED.</div>
 </div>
 </footer>
 <dialog aria-label="FoodieHub details">
