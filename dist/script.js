@@ -60,7 +60,7 @@ const revealTargets = document.querySelectorAll(
   '.section-heading, .hero > div, .intro h1, .intro > p, .heritage > div, ' +
   '.story-copy, .product, .mini-deal, .gallery-card, .home-gallery > div, ' +
   '.review, .chef, .value, .deal, .promo-panel, .policy-panel, .banquet-panel, ' +
-  '.contact-details, .booking-panel, .message-form, .catering-note, .stat, .category-card, .signature-copy, .signature-photo, .dining-copy, .visit-photo, .menu-category-heading, .about-story-heading, .about-story-body, .about-story-photo, .about-philosophy-photo, .about-philosophy-copy, .about-section-heading, .about-role-card, .about-sourcing-copy, .about-sourcing-photo, .about-process-layout, .about-room-photo, .about-values-copy, .about-values-accordion'
+  '.contact-details, .booking-panel, .message-form, .catering-note, .stat, .category-card, .signature-copy, .signature-photo, .dining-copy, .visit-photo, .menu-category-heading, .about-story-heading, .about-story-body, .about-story-photo, .about-philosophy-photo, .about-philosophy-copy, .about-section-heading, .about-role-card, .about-sourcing-copy, .about-sourcing-photo, .about-process-layout, .about-room-photo, .about-values-copy, .about-values-accordion, .bundle-card, .offer-collection-heading, .offer-planner-intro, .offer-planner-body, .offer-guidance>div, .journal-item, .journal-invitation>div'
 );
 let revealObserver;
 function setUpReveals() {
@@ -186,3 +186,13 @@ document.querySelector('#reset-menu')?.addEventListener('click',()=>{
   search.focus({preventScroll:true});
   document.querySelector('#menu-browse')?.scrollIntoView({behavior:reducedMotion.matches?'instant':'smooth',block:'start'});
 });
+
+// Offer enquiries arrive as editable text; nothing is sent automatically.
+{
+  const incoming=new URLSearchParams(window.location.search);
+  const note=document.querySelector('#notes');
+  if(note && incoming.get('inquiry')){
+    note.value=incoming.get('inquiry').slice(0,500);
+    if(incoming.get('mode')==='message')document.querySelector('[data-booking-tab="message"]')?.click();
+  }
+}

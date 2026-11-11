@@ -3,11 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="FoodieHub — fresh food, great taste. Artisan dishes, special offers, culinary heritage and table reservations.">
+<meta name="description" content="Discover meal bundles for lunch, sharing, pizza, mornings, and little breaks. Build a table plan and enquire about your favourites.">
 <title>FoodieHub | Offers</title>
 <link rel="stylesheet" href="styles.css?v=4a2bed26cc15">
-<script src="script.js?v=73b168edafb0" defer>
+<link rel="stylesheet" href="experiences.css?v=ccb809423dcd">
+<link rel="stylesheet" href="offers.css?v=42ec4b4c65f5">
+<script src="script.js?v=b6a8f492be82" defer>
 </script>
+<script src="offers.js?v=6971ad44cf1d" defer></script>
 </head>
 <body class="page-offers">
 <header class="site-header">
@@ -15,7 +18,7 @@
 <a class="logo" href="index.html">
 <span class="glyph" data-icon="cutlery" aria-hidden="true">
 </span>
-<span>FOODIEHUB<small>// SCHEMATIC_V1</small>
+<span>FOODIEHUB<small>FRESH FOOD. GOOD TIMES.</small>
 </span>
 </a>
 <nav class="nav" aria-label="Main navigation">
@@ -37,168 +40,15 @@
 </div>
 </header>
 <main>
-<div class="top-spacer">
-</div>
-<section class="intro container offers-intro">
-<span class="outline-tag">◇ CATALOGUE TARIFF: LIMITED CYCLES</span>
-<h1>SPECIAL OFFERS & COMBO DEALS</h1>
-<p>Limited-time culinary specials and combo deals engineered for sharing and dining. Every promotional node is calibrated with precise constituent items, transparent rates, and automated voucher protocol verification.</p>
-</section>
-<section class="container grid cols-4 deals">
-<article class="deal">
-<div class="deal-ribbon">
-<span class="black-tag">SAVE 25% OFF</span>
-</div>
-<div class="wireframe deal-photo" >
-<div class="wireframe-badge">
-<span class="glyph" data-icon="grill" aria-hidden="true">
-</span>
-<span>[WOODFIRE PLATTER // SAT-SUN]</span>
-</div>
-</div>
-<div class="deal-copy">
-<h3>FAMILY FEAST</h3>
-<p>Engineered for large tables. Includes 2 artisan flatbreads, 4 signature grilled mains, family harvest bowl, and artisanal beverage decanter.</p>
-<div class="voucher flex">
-<span>VOUCHER CODE:</span>
-<b>FAMILY25</b>
-</div>
-</div>
-<div class="deal-bottom flex">
-<div>
-<del>₹1,999</del>
-<br>
-<strong>₹1,499</strong> <small>NET</small>
-</div>
-<button class="dark" data-add="FAMILY FEAST">ORDER NOW</button>
-</div>
-</article>
-<article class="deal">
-<div class="deal-ribbon">
-<span class="outline-tag">CHEF SPECIAL</span>
-</div>
-<div class="wireframe deal-photo" >
-<div class="wireframe-badge">
-<span class="glyph" data-icon="grill" aria-hidden="true">
-</span>
-<span>[WOODFIRE PLATTER // SAT-SUN]</span>
-</div>
-</div>
-<div class="deal-copy">
-<h3>WEEKEND SPECIAL</h3>
-<p>Woodfired roasted platter featuring slow-braised cuts, herb-crusted seasonal vegetables, smoked relish dips, and rustic sourdough wedges.</p>
-<div class="voucher flex">
-<span>CADENCE:</span>
-<b>SAT-SUN ONLY</b>
-</div>
-</div>
-<div class="deal-bottom flex">
-<div>
-<del>₹1,150</del>
-<br>
-<strong>₹899</strong> <small>NET</small>
-</div>
-<button class="dark" data-add="WEEKEND SPECIAL">ORDER NOW</button>
-</div>
-</article>
-<article class="deal">
-<div class="deal-ribbon">
-<span class="black-tag">FLAT ₹150 OFF</span>
-</div>
-<div class="wireframe deal-photo" >
-<div class="wireframe-badge">
-<span class="glyph" data-icon="badge" aria-hidden="true">
-</span>
-<span>[NEW GUEST INTAKE NODE]</span>
-</div>
-</div>
-<div class="deal-copy">
-<h3>FIRST ORDER PERK</h3>
-<p>System onboarding incentive for newly registered culinary guests. Valid across full a-la-carte menu with a minimal threshold of ₹499.</p>
-<div class="voucher flex">
-<span>VOUCHER CODE:</span>
-<b>TASTE150</b>
-</div>
-</div>
-<div class="deal-bottom flex">
-<div>
-<small>MIN BASKET</small>
-<br>
-<strong>₹499</strong> <small>MIN</small>
-</div>
-<button class="" data-claim>CLAIM OFFER</button>
-</div>
-</article>
-<article class="deal">
-<div class="deal-ribbon">
-<span class="black-tag">FLAT ₹150 OFF</span>
-</div>
-<div class="wireframe deal-photo" >
-<div class="wireframe-badge">
-<span class="glyph" data-icon="burger" aria-hidden="true">
-</span>
-<span>[BUSINESS LUNCH SPEC]</span>
-</div>
-</div>
-<div class="deal-copy">
-<h3>LUNCH COMBO SCHEMATIC</h3>
-<p>Business lunch express: 1 entrée portion, steam pilaf or artisan bread, cold-pressed citrus juice, and seasonal micro-dessert cup.</p>
-<div class="voucher flex">
-<span>HOURS:</span>
-<b>12:00 - 15:30 HRS</b>
-</div>
-</div>
-<div class="deal-bottom flex">
-<div>
-<del>₹450</del>
-<br>
-<strong>₹349</strong> <small>NET</small>
-</div>
-<button class="dark" data-add="LUNCH COMBO SCHEMATIC">ORDER NOW</button>
-</div>
-</article>
-</section>
-<section class="container grid promo-section">
-<form class="promo-panel" id="promo-form">
-<h3>APPLY PROMO PROTOCOL</h3>
-<p>Input active coupon strings into the verification register below. System computes discount reductions real-time prior to settlement.</p>
-<div class="promo-entry">
-<input id="promo-code" aria-label="Voucher code" required>
-<button class="dark">VERIFY & APPLY</button>
-</div>
-<div class="promo-status" id="promo-status" role="status">ⓘ &nbsp;AWAITING CODE SUBMISSION // READY</div>
-</form>
-<div class="policy-panel">
-<details>
-<summary>COMBINABILITY & CONCURRENT VOUCHER POLICY</summary>
-<p>One promotional voucher may be applied per order. Offers cannot be combined with other vouchers.</p>
-</details>
-<details>
-<summary>TIME CADENCE & EXPIRATION BOUNDARIES</summary>
-<p>Weekend specials are available Saturday and Sunday. Lunch combos are available from 12:00 to 15:30.</p>
-</details>
-<details>
-<summary>DINE-IN, PICKUP & DISPATCH RESTRICTIONS</summary>
-<p>Confirm offer availability for your preferred dining or collection option when ordering.</p>
-</details>
-<details>
-<summary>TAX, SERVICE LEVIES & PACKAGING SURCHARGES</summary>
-<p>Applicable taxes and any packaging charges are shown before you confirm your order.</p>
-</details>
-</div>
-</section>
-<section class="container banquet-section">
-<div class="grid banquet-panel">
-<div>
-<h2>HOSTING A PRIVATE RECEPTION OR CORPORATE BANQUET?</h2>
-<p>Custom engineered architectural tasting courses, live open-fire barbecue bays, and dedicated culinary captains. Download our institutional banquet schematics or dispatch a direct booking inquiry.</p>
-</div>
-<div>
-<button class="dark" id="banquet-request">REQUEST BANQUET DOSSIER</button>
-<a class="button" href="contact.html">CONTACT CONCIERGE [COMM]</a>
-</div>
-</div>
-</section>
+<section class="offer-hero container" aria-labelledby="offers-title"><div class="offer-hero-copy"><span class="offer-kicker">01 / THE BETTER-TOGETHER EDIT</span><h1 id="offers-title">More to enjoy.<br><em>More to share.</em></h1><p>Thoughtful meal bundles for lunch breaks, long catch-ups, and all the little occasions in between.</p><a class="button dark" href="#offer-lunch">FIND YOUR KIND OF TREAT ↓</a><div class="offer-hero-note"><strong>10</strong><span>MEAL BUNDLES.<br>A LITTLE SOMETHING FOR EVERY PLAN.</span></div></div><div class="offer-hero-photo"><img src="assets/offers/hero.jpg" alt="A generous spread of freshly prepared dishes, flatbreads and sides" width="1200" height="900" decoding="async" loading="eager" fetchpriority="high"><span>THE BEST EXCUSE IS GOOD FOOD.</span></div><nav class="offer-jump-links" aria-label="Offer collections"><a href="#offer-lunch">LUNCH</a><a href="#offer-sharing">SHARING</a><a href="#offer-pizza">PIZZA</a><a href="#offer-mornings">MORNINGS</a><a href="#offer-breaks">LITTLE BREAKS</a><a href="#offer-planner">BUILD A PLAN ↗</a></nav></section>
+<section class="offer-collection container " id="offer-lunch" aria-labelledby="offer-title-lunch"><div class="offer-collection-heading"><span class="offer-kicker">02 / LITTLE LUNCHTIME WINS</span><h2 id="offer-title-lunch">Your lunch break,<br><em>well spent.</em></h2><p>An easy way to put a satisfying meal together, without overthinking the order.</p><span class="offer-collection-index">01 / 05 COLLECTIONS</span></div><div class="bundle-grid"><article class="bundle-card" data-bundle-card="midday-comfort"><div class="bundle-photo"><img src="assets/offers/lunch-pasta.jpg" alt="A fork lifting pasta from a freshly prepared plate" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR ONE</span></div><div class="bundle-copy"><h3>Midday Comfort</h3><p>A satisfying pasta plate, a crisp side salad, and a chilled citrus drink.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>One pasta plate</li><li>One side salad</li><li>One citrus cooler</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹399<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="midday-comfort">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article><article class="bundle-card" data-bundle-card="wrap-recharge"><div class="bundle-photo"><img src="assets/offers/lunch-wrap.jpg" alt="A filled toasted wrap with vegetables and lime" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR ONE</span></div><div class="bundle-copy"><h3>Wrap & Recharge</h3><p>A generously filled wrap with a crunchy side and a refreshing drink.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>One toasted wrap</li><li>One crunchy side</li><li>One house cooler</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹359<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="wrap-recharge">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article></div></section>
+<section class="offer-collection container offer-tinted" id="offer-sharing" aria-labelledby="offer-title-sharing"><div class="offer-collection-heading"><span class="offer-kicker">03 / PULL UP ANOTHER CHAIR</span><h2 id="offer-title-sharing">Something good<br><em>to pass around.</em></h2><p>For catching up, passing plates, and making sure nobody leaves the table hungry.</p><span class="offer-collection-index">02 / 05 COLLECTIONS</span></div><div class="bundle-grid"><article class="bundle-card" data-bundle-card="supper-four"><div class="bundle-photo"><img src="assets/offers/sharing-table.jpg" alt="A bowl of creamy penne with herbs" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR FOUR</span></div><div class="bundle-copy"><h3>Supper for Four</h3><p>Two family-style pasta plates, garlic bread, a large salad, and four coolers.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>Two sharing-size pastas</li><li>Garlic bread and large salad</li><li>Four house coolers</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹1,490<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="supper-four">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article><article class="bundle-card" data-bundle-card="bagel-social"><div class="bundle-photo"><img src="assets/offers/sharing-board.jpg" alt="A filled bagel with fresh greens, tomato and cheese" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR TWO</span></div><div class="bundle-copy"><h3>The Bagel Social</h3><p>Two filled bagels, one generous side, and two drinks for an easy catch-up.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>Two filled bagels</li><li>One sharing side</li><li>Two chilled drinks</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹690<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="bagel-social">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article></div></section>
+<section class="offer-collection container " id="offer-pizza" aria-labelledby="offer-title-pizza"><div class="offer-collection-heading"><span class="offer-kicker">04 / ROUND UP YOUR PEOPLE</span><h2 id="offer-title-pizza">A reason to gather<br><em>around the pizza.</em></h2><p>Pick your company. We will help you put the rest of the table together.</p><span class="offer-collection-index">03 / 05 COLLECTIONS</span></div><div class="bundle-grid"><article class="bundle-card" data-bundle-card="slice-together"><div class="bundle-photo"><img src="assets/offers/pizza-table.jpg" alt="A golden pizza with herbs and fresh toppings" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR TWO</span></div><div class="bundle-copy"><h3>Slice Together</h3><p>One large pizza, a bowl of seasoned wedges, and two sparkling coolers.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>One large pizza</li><li>One seasoned wedges bowl</li><li>Two sparkling coolers</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹799<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="slice-together">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article><article class="bundle-card" data-bundle-card="pizza-circle"><div class="bundle-photo"><img src="assets/offers/pizza-pair.jpg" alt="A sliced pizza on a rustic wooden serving board" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR FOUR</span></div><div class="bundle-copy"><h3>The Pizza Circle</h3><p>Two pizzas, a fresh green salad, and four drinks. More room for everyone.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>Two pizzas</li><li>One large green salad</li><li>Four house drinks</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹1,290<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="pizza-circle">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article></div></section>
+<section class="offer-collection container offer-tinted" id="offer-mornings" aria-labelledby="offer-title-mornings"><div class="offer-collection-heading"><span class="offer-kicker">05 / START A LITTLE SLOWER</span><h2 id="offer-title-mornings">Mornings with<br><em>more to savour.</em></h2><p>Make a little space for a comforting stack or a quiet cup before the day gets going.</p><span class="offer-collection-index">04 / 05 COLLECTIONS</span></div><div class="bundle-grid"><article class="bundle-card" data-bundle-card="morning-stack"><div class="bundle-photo"><img src="assets/offers/brunch-pancakes.jpg" alt="Pancakes topped with berries, cream and syrup" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR ONE</span></div><div class="bundle-copy"><h3>The Morning Stack</h3><p>A berry-topped pancake stack with a hot drink for a softer start to the day.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>One pancake stack</li><li>Berry topping</li><li>One hot drink</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹349<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="morning-stack">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article><article class="bundle-card" data-bundle-card="matcha-pause"><div class="bundle-photo"><img src="assets/offers/brunch-toast.jpg" alt="Matcha tea and a bamboo whisk arranged on a wooden table" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR ONE</span></div><div class="bundle-copy"><h3>A Matcha Pause</h3><p>A warm matcha, a buttered toast portion, and a small seasonal fruit side.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>One warm matcha</li><li>One buttered toast portion</li><li>Seasonal fruit side</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹329<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="matcha-pause">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article></div></section>
+<section class="offer-collection container " id="offer-breaks" aria-labelledby="offer-title-breaks"><div class="offer-collection-heading"><span class="offer-kicker">06 / THE IN-BETWEEN MOMENTS</span><h2 id="offer-title-breaks">Take a break.<br><em>Make it delicious.</em></h2><p>A small pick-me-up, a warm cup, and a good excuse to pause for a while.</p><span class="offer-collection-index">05 / 05 COLLECTIONS</span></div><div class="bundle-grid"><article class="bundle-card" data-bundle-card="berry-break"><div class="bundle-photo"><img src="assets/offers/sweet-cake.jpg" alt="A colourful fruit and berry bowl" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR ONE</span></div><div class="bundle-copy"><h3>The Berry Break</h3><p>A bright fruit bowl and a fragrant tea. An afternoon pause with a lighter touch.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>One fruit and berry bowl</li><li>One fragrant tea</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹299<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="berry-break">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article><article class="bundle-card" data-bundle-card="coffee-companion"><div class="bundle-photo"><img src="assets/offers/sweet-coffee.jpg" alt="Milk being poured into a cup of freshly made coffee" width="1200" height="900" decoding="async" loading="lazy"><span class="bundle-serving">FOR ONE</span></div><div class="bundle-copy"><h3>Coffee & a Little Something</h3><p>A carefully made coffee with a pastry selected from the counter.</p><details><summary>WHAT IS INCLUDED <span aria-hidden="true">+</span></summary><ul><li>One coffee</li><li>One counter pastry</li></ul></details><div class="bundle-bottom"><span class="bundle-price">₹279<small>PER BUNDLE</small></span><button class="dark" data-plan-offer="coffee-companion">ADD TO PLAN <span aria-hidden="true">↗</span></button></div></div></article></div></section>
+<section class="offer-occasion container" id="offer-occasions" aria-labelledby="occasions-title"><div><span class="offer-kicker">07 / WHEN THE OCCASION GETS BIGGER</span><h2 id="occasions-title">A bigger table.<br><em>A personal touch.</em></h2><p>A milestone, a team get-together, or a reason to celebrate. Tell us the occasion, the number of guests, and the food you have in mind.</p><a class="button" href="contact.html?mode=message&inquiry=I%20would%20like%20to%20discuss%20a%20group%20dining%20occasion.">TALK ABOUT YOUR OCCASION ↗</a></div></section>
+<section class="offer-planner container" id="offer-planner" aria-labelledby="planner-title"><div class="offer-planner-intro"><span class="offer-kicker">08 / PUT YOUR FAVOURITES TOGETHER</span><h2 id="planner-title">Your table.<br><em>Your little plan.</em></h2><p>Choose a bundle and a quantity to see an estimated total. Save your selection or bring it into a conversation with our team.</p><span class="offer-code-hint">PLANNER CODE <b>TOGETHER10</b><small>Preview 10% off your selected bundles.</small></span></div><div class="offer-planner-body"><form id="bundle-planner"><label for="plan-bundle">CHOOSE YOUR BUNDLE</label><select id="plan-bundle"><option value="midday-comfort">Midday Comfort · ₹399</option><option value="wrap-recharge">Wrap & Recharge · ₹359</option><option value="supper-four">Supper for Four · ₹1,490</option><option value="bagel-social">The Bagel Social · ₹690</option><option value="slice-together">Slice Together · ₹799</option><option value="pizza-circle">The Pizza Circle · ₹1,290</option><option value="morning-stack">The Morning Stack · ₹349</option><option value="matcha-pause">A Matcha Pause · ₹329</option><option value="berry-break">The Berry Break · ₹299</option><option value="coffee-companion">Coffee & a Little Something · ₹279</option></select><div class="offer-planner-fields"><div><label for="plan-quantity">NUMBER OF BUNDLES</label><select id="plan-quantity"><option value="1">1 bundle</option><option value="2">2 bundles</option><option value="3">3 bundles</option><option value="4">4 bundles</option><option value="5">5 bundles</option><option value="6">6 bundles</option></select></div><div><label for="plan-code">PLANNER CODE (OPTIONAL)</label><input id="plan-code" placeholder="Enter a code" autocomplete="off" maxlength="30"></div></div><button class="dark" type="submit">UPDATE ESTIMATE ↗</button><p id="plan-code-status" role="status" aria-live="polite"></p></form><div class="offer-plan-summary"><span class="offer-plan-label">YOUR TABLE PLAN</span><h3 id="plan-name">Midday Comfort</h3><p id="plan-serving">1 bundle · suggested for 1 person</p><dl><div><dt>Bundle subtotal</dt><dd id="plan-subtotal">₹399</dd></div><div><dt>Planner saving</dt><dd id="plan-saving">₹0</dd></div><div class="offer-plan-total"><dt>Estimated total</dt><dd><output id="plan-total" aria-live="polite">₹399</output></dd></div></dl><div class="offer-plan-actions"><button id="save-offer-plan" type="button">SAVE ON THIS DEVICE</button><a class="button dark" id="enquire-offer-plan" href="contact.html?mode=message">ASK ABOUT THIS PLAN ↗</a></div><p class="offer-estimate-note">This is a planning estimate. Confirm availability, inclusions, and final pricing with our team before ordering. No payment is taken here.</p></div></div></section>
+<section class="offer-guidance container" id="offer-guidance" aria-labelledby="guidance-title"><div><span class="offer-kicker">09 / THE USEFUL LITTLE DETAILS</span><h2 id="guidance-title">A few things<br><em>worth knowing.</em></h2><p>Keep the planning simple. If you are unsure about any detail, we are happy to talk it through.</p></div><div class="offer-faqs"><details name="offer-faq"><summary>How do I confirm a bundle?</summary><p>Choose a bundle, build your estimate, and use the enquiry link or contact page to discuss it with the team. Saving a plan stores your selection on this device; it does not place an order or reserve a table.</p></details><details name="offer-faq"><summary>Can the contents be adjusted?</summary><p>Please ask before ordering. Ingredient swaps, serving sizes, and dietary requests depend on what the kitchen can accommodate and may affect the price.</p></details><details name="offer-faq"><summary>How does the planner code work?</summary><p>TOGETHER10 previews a 10% reduction on the bundle subtotal in this planner. It is not a completed transaction or a guarantee of a discount. Confirm the applicable offer with the restaurant.</p></details><details name="offer-faq"><summary>What about allergies and extra charges?</summary><p>Tell the team about allergies before choosing. Any applicable taxes, service, packaging, or other charges should be confirmed with the restaurant before you commit to an order.</p></details></div></section>
 </main>
 <footer class="site-footer">
 <div class="container footer-inner">
@@ -209,7 +59,7 @@
 </span>
 <span>FOODIEHUB</span>
 </a>
-<p>High-rigor restaurant discovery and digital ordering architectural blueprint. Engineered for transparent, structured culinary navigation and spatial reservation mapping.</p>
+<p>A little more variety for the way you like to gather. Explore the bundles, build a plan, and ask us about making it yours.</p>
 </div>
 <div class="footer-links">
 <h4>QUICK NAVIGATION</h4>
@@ -243,7 +93,7 @@
 </div>
 </div>
 </div>
-<div class="copyright">© 2024 FOODIEHUB WIREFRAME ARCHITECTURE. ALL RIGHTS RESERVED.</div>
+<div class="copyright">© 2024 FOODIEHUB. ALL RIGHTS RESERVED.</div>
 </div>
 </footer>
 <dialog aria-label="FoodieHub details">
@@ -253,5 +103,6 @@
 </dialog>
 <div id="notice" role="status" aria-live="polite">
 </div>
+<script type="application/json" id="bundle-data">[{"id":"midday-comfort","name":"Midday Comfort","price":399,"serves":1,"image":"lunch-pasta","alt":"A fork lifting pasta from a freshly prepared plate","copy":"A satisfying pasta plate, a crisp side salad, and a chilled citrus drink.","includes":["One pasta plate","One side salad","One citrus cooler"]},{"id":"wrap-recharge","name":"Wrap & Recharge","price":359,"serves":1,"image":"lunch-wrap","alt":"A filled toasted wrap with vegetables and lime","copy":"A generously filled wrap with a crunchy side and a refreshing drink.","includes":["One toasted wrap","One crunchy side","One house cooler"]},{"id":"supper-four","name":"Supper for Four","price":1490,"serves":4,"image":"sharing-table","alt":"A bowl of creamy penne with herbs","copy":"Two family-style pasta plates, garlic bread, a large salad, and four coolers.","includes":["Two sharing-size pastas","Garlic bread and large salad","Four house coolers"]},{"id":"bagel-social","name":"The Bagel Social","price":690,"serves":2,"image":"sharing-board","alt":"A filled bagel with fresh greens, tomato and cheese","copy":"Two filled bagels, one generous side, and two drinks for an easy catch-up.","includes":["Two filled bagels","One sharing side","Two chilled drinks"]},{"id":"slice-together","name":"Slice Together","price":799,"serves":2,"image":"pizza-table","alt":"A golden pizza with herbs and fresh toppings","copy":"One large pizza, a bowl of seasoned wedges, and two sparkling coolers.","includes":["One large pizza","One seasoned wedges bowl","Two sparkling coolers"]},{"id":"pizza-circle","name":"The Pizza Circle","price":1290,"serves":4,"image":"pizza-pair","alt":"A sliced pizza on a rustic wooden serving board","copy":"Two pizzas, a fresh green salad, and four drinks. More room for everyone.","includes":["Two pizzas","One large green salad","Four house drinks"]},{"id":"morning-stack","name":"The Morning Stack","price":349,"serves":1,"image":"brunch-pancakes","alt":"Pancakes topped with berries, cream and syrup","copy":"A berry-topped pancake stack with a hot drink for a softer start to the day.","includes":["One pancake stack","Berry topping","One hot drink"]},{"id":"matcha-pause","name":"A Matcha Pause","price":329,"serves":1,"image":"brunch-toast","alt":"Matcha tea and a bamboo whisk arranged on a wooden table","copy":"A warm matcha, a buttered toast portion, and a small seasonal fruit side.","includes":["One warm matcha","One buttered toast portion","Seasonal fruit side"]},{"id":"berry-break","name":"The Berry Break","price":299,"serves":1,"image":"sweet-cake","alt":"A colourful fruit and berry bowl","copy":"A bright fruit bowl and a fragrant tea. An afternoon pause with a lighter touch.","includes":["One fruit and berry bowl","One fragrant tea"]},{"id":"coffee-companion","name":"Coffee & a Little Something","price":279,"serves":1,"image":"sweet-coffee","alt":"Milk being poured into a cup of freshly made coffee","copy":"A carefully made coffee with a pastry selected from the counter.","includes":["One coffee","One counter pastry"]}]</script>
 </body>
 </html>
