@@ -60,7 +60,7 @@ const revealTargets = document.querySelectorAll(
   '.section-heading, .hero > div, .intro h1, .intro > p, .heritage > div, ' +
   '.story-copy, .product, .mini-deal, .gallery-card, .home-gallery > div, ' +
   '.review, .chef, .value, .deal, .promo-panel, .policy-panel, .banquet-panel, ' +
-  '.contact-details, .booking-panel, .message-form, .catering-note, .stat, .category-card, .signature-copy, .signature-photo, .dining-copy, .visit-photo, .menu-category-heading'
+  '.contact-details, .booking-panel, .message-form, .catering-note, .stat, .category-card, .signature-copy, .signature-photo, .dining-copy, .visit-photo, .menu-category-heading, .about-story-heading, .about-story-body, .about-story-photo, .about-philosophy-photo, .about-philosophy-copy, .about-section-heading, .about-role-card, .about-sourcing-copy, .about-sourcing-photo, .about-process-layout, .about-room-photo, .about-values-copy, .about-values-accordion'
 );
 let revealObserver;
 function setUpReveals() {

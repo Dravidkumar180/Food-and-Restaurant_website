@@ -1,0 +1,272 @@
+/* A people-first editorial About page, in soft parchment and clay. */
+.page-about{--about-clay:#926750;--about-ink:#3e332d;--about-paper:#faf6ef;--about-sand:#eee5db;--line:#dfd3c7;--gray:#796d62;background:#fffdf9;color:var(--about-ink)}
+.page-about .container{padding-left:64px;padding-right:64px}
+.page-about .site-header{background:#fffdf9}
+.page-about .header-inner{height:76px}
+.page-about .logo small{font-size:8px;letter-spacing:1.1px;color:#947a66}
+.page-about .dark{background:var(--about-ink);border-color:var(--about-ink);color:#fff}
+.page-about button,.page-about .button{font-size:9px;letter-spacing:1.1px;gap:22px;padding:14px 20px}
+.page-about button.dark:hover,.page-about .button.dark:hover{background:var(--about-clay);border-color:var(--about-clay);color:white}
+.page-about .header-actions .profile{padding:0;background:#3e332d;border-color:#3e332d}
+.page-about .about-kicker{display:block;color:var(--about-clay);font-size:9px;font-weight:600;letter-spacing:2.2px;line-height:1.7;text-transform:uppercase;margin-bottom:20px}
+.page-about em{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:#a2755c}
+.page-about h2{font-size:42px;letter-spacing:-1.4px;line-height:1.12}
+.page-about p{font-size:14px;line-height:1.85;color:var(--gray)}
+.page-about .about-section{padding-top:84px;padding-bottom:84px;scroll-margin-top:90px}
+.about-hero{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding-top:72px;padding-bottom:86px;position:relative;isolation:isolate;background:#f3ece3}
+.about-hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#f3ece3fa,#f3ece3f7),url('assets/about/table.jpg') center/cover no-repeat}
+.page-about .about-hero h1{font-size:clamp(48px,5vw,74px);letter-spacing:-2.2px;line-height:1.04}
+.about-hero-copy>p{font-size:15px;line-height:1.85;margin:26px 0 30px;max-width:440px}
+.about-hero-links{display:flex;gap:25px;flex-wrap:wrap;margin-top:46px;padding-top:20px;border-top:1px solid #d3c4b3}
+.about-hero-links a{font-size:8px;letter-spacing:1px;color:#8c705a;position:relative}
+.about-hero-links a:after{content:'';height:1px;position:absolute;bottom:-4px;left:0;right:0;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.about-hero-links a:hover{text-decoration:none}
+.about-hero-links a:hover:after{transform:scaleX(1)}
+.about-hero-media{height:500px;position:relative}
+.page-about img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease-out)}
+.about-hero-media>img{clip-path:polygon(0 0,100% 0,100% 91%,91% 100%,0 100%);object-position:50% center}
+.about-vertical-label{position:absolute;right:-24px;top:12px;writing-mode:vertical-rl;font-size:8px;letter-spacing:2px;color:#9b7a60}
+.about-hero-note{position:absolute;left:-34px;bottom:32px;background:#fffaf1;padding:22px 28px;box-shadow:0 12px 32px #4c35271a;border-left:2px solid #a2755c}
+.about-hero-note>span{font-size:8px;letter-spacing:1.3px;color:#9b8068}
+.about-hero-note strong{display:block;font-size:23px;font-weight:600;letter-spacing:-.6px;margin-top:6px}
+.about-story{display:grid;grid-template-columns:1fr 1fr;column-gap:90px;row-gap:44px}
+.about-story-heading h2{margin-bottom:24px}
+.about-small-rule{display:block;width:48px;border-top:2px solid #a2755c;margin:26px 0}
+.page-about .about-lead{font-family:Georgia,serif;font-size:21px;line-height:1.55;color:#75604f;max-width:430px}
+.about-story-body{padding-top:36px}
+.about-story-body>p{margin-bottom:20px;max-width:500px}
+.about-text-link{display:inline-block;font-size:9px;font-weight:600;letter-spacing:1.2px;color:var(--about-clay);border-bottom:1px solid #b39881;padding:6px 0;margin-top:6px}
+.about-text-link:hover{text-decoration:none;border-color:#3e332d}
+.about-story-photo{grid-column:1/-1;margin:0;position:relative;height:370px;overflow:hidden}
+.about-story-photo>img{object-position:50% 58%}
+.about-story-photo figcaption{position:absolute;bottom:22px;left:24px;padding:10px 16px;color:#f7ecde;background:#38271fba;font-family:Georgia,serif;font-size:17px;letter-spacing:.2px}
+.about-philosophy{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:center;background:var(--about-paper)}
+.about-philosophy-photo{height:540px;position:relative}
+.about-philosophy-photo>img{object-position:44% center}
+.about-photo-tag{position:absolute;left:24px;bottom:24px;background:#fff8ecef;padding:13px 18px;color:#8c6f57;font-size:8px;letter-spacing:1.5px}
+.about-philosophy-copy>p{margin-top:24px;max-width:490px}
+.about-principles{margin-top:25px}
+.about-principles>div{display:flex;gap:20px;border-top:1px solid #ddd0c0;padding:17px 0}
+.about-principles>div>span{font-family:Georgia,serif;font-size:18px;color:#b2947c;padding-top:1px}
+.about-principles h3{font-size:15px;letter-spacing:-.2px;margin:0 0 7px}
+.page-about .about-principles p{font-size:12px;line-height:1.7}
+.about-section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:60px;margin-bottom:38px}
+.about-section-heading>p{max-width:410px;font-size:13px;line-height:1.85}
+.about-people-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.about-role-card{border:1px solid #e5d9cd;background:#fffdf8;overflow:hidden;transition:transform .4s var(--ease-out),box-shadow .4s ease}
+.about-role-photo{height:290px;overflow:hidden}
+.about-role-photo>img{object-position:50% 45%}
+.about-role-copy{padding:27px 24px 29px}
+.about-role-copy>span{font-size:8px;letter-spacing:1.5px;color:#ab8c73}
+.about-role-copy h3{font-size:20px;letter-spacing:-.6px;margin:14px 0 15px;line-height:1.15}
+.page-about .about-role-copy p{font-size:12px;line-height:1.8}
+.about-sourcing{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;background:#473b31;color:#fff}
+.about-sourcing:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#302820fa,#302820ef),url('assets/about/produce.jpg') center/cover no-repeat}
+.page-about .about-sourcing .about-kicker{color:#d5b08e}
+.page-about .about-sourcing h2 em{color:#dcbda0}
+.page-about .about-sourcing-copy>p{color:#d5c5b5;margin-top:25px;max-width:480px}
+.about-source-list{list-style:none;padding:0;margin:30px 0 0}
+.about-source-list li{position:relative;padding:15px 0 15px 24px;border-top:1px solid #ad92753d}
+.about-source-list li:before{content:'+';position:absolute;left:0;top:15px;color:#d3ad85;font-size:16px}
+.about-source-list li>span{font-size:13px;font-weight:600;color:#f2e5d8;letter-spacing:.1px}
+.page-about .about-source-list p{font-size:12px;line-height:1.7;margin-top:7px;color:#c7b6a4;max-width:450px}
+.about-sourcing-photo{height:480px;position:relative;margin-right:24px}
+.about-sourcing-photo>img{object-position:50% center}
+.about-market-inset{position:absolute;bottom:-30px;left:-40px;width:200px;height:210px;padding:8px;background:#f2e7d7;box-shadow:0 10px 30px #0003;transform:rotate(-4deg)}
+.about-market-inset img{height:165px}
+.about-market-inset>span{display:block;font-size:7px;letter-spacing:.9px;color:#78604b;text-align:center;margin-top:11px}
+.about-process{background:#f1e9de}
+.about-process-layout{display:grid;grid-template-columns:340px 1fr;gap:44px;align-items:stretch}
+.about-process-tabs{display:flex;flex-direction:column;gap:10px;align-self:start}
+.about-process-tabs>button{display:flex;align-items:center;justify-content:flex-start;gap:18px;padding:23px 20px;text-align:left;border:1px solid #d8c8b7;background:transparent;color:#655447;transition:background-color .25s,color .25s,border-color .25s}
+.about-step-number{font-family:Georgia,serif;font-size:20px;color:#a08369;min-width:25px;letter-spacing:0}
+.about-process-tabs strong{display:block;font-size:14px;letter-spacing:0;font-weight:600}
+.about-process-tabs small{display:block;font-size:10px;letter-spacing:.1px;margin-top:7px;color:#9e8873;font-weight:400}
+.about-step-arrow{margin-left:auto;color:#a08369;font-size:18px;transition:transform .25s ease}
+.about-process-tabs>button[aria-selected=true]{background:#795b45;color:#fff;border-color:#795b45}
+.about-process-tabs>button[aria-selected=true] .about-step-number,.about-process-tabs>button[aria-selected=true] small,.about-process-tabs>button[aria-selected=true] .about-step-arrow{color:#e3c7ac}
+.about-process-panel{min-width:0;background:#fffaf2;outline-offset:4px}
+.about-process-image{height:340px;overflow:hidden;background:#ded0bd}
+.about-process-image img{object-position:center 55%}
+.about-process-caption{display:flex;gap:26px;align-items:flex-start;padding:25px 28px}
+.about-process-caption>span{white-space:nowrap;color:#b79a80;font-size:10px;letter-spacing:1px;line-height:2}
+.about-process-caption h3{font-size:21px;letter-spacing:-.5px;margin-bottom:10px}
+.page-about .about-process-caption p{font-size:12px;line-height:1.8;max-width:560px}
+.about-process-panel[aria-busy=true]{cursor:progress}
+.about-room-photo{height:500px;position:relative;overflow:hidden;cursor:pointer;background:#eadbca}
+.about-room-photo>img{object-position:center 54%}
+.about-room-photo>span{position:absolute;right:25px;bottom:25px;padding:12px 17px;background:#fff9ecef;font-size:8px;color:#77583f;letter-spacing:1.3px;display:flex;gap:26px;align-items:center}
+.about-room-photo>span b{font-size:17px;font-weight:400}
+.about-space-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:45px;padding-top:27px}
+.about-space-notes>div>span{display:block;font-size:8px;letter-spacing:1.3px;color:#a18368;margin-bottom:12px}
+.page-about .about-space-notes p{font-size:12px;line-height:1.8}
+.about-values{display:grid;grid-template-columns:1fr 1fr;gap:100px;background:#f7f2e9;align-items:start}
+.about-values-copy>p{margin-top:24px;max-width:450px}
+.about-values-photo{margin:30px 0 0;position:relative;height:230px;max-width:470px;overflow:hidden}
+.about-values-photo>img{object-position:center 48%}
+.about-values-photo>figcaption{position:absolute;left:14px;bottom:14px;background:#fffaf0e8;color:#8a725c;font-family:Georgia,serif;font-size:15px;padding:9px 14px}
+.about-values-accordion{padding-top:30px}
+.about-values-accordion details{border-top:1px solid #d7c9b6;padding:0;margin:0}
+.about-values-accordion details:last-child{border-bottom:1px solid #d7c9b6}
+.about-values-accordion summary{list-style:none;display:flex;gap:20px;align-items:center;cursor:pointer;font-size:17px;font-weight:600;letter-spacing:-.3px;padding:26px 0}
+.about-values-accordion summary::-webkit-details-marker{display:none}
+.about-values-accordion summary>span{font-size:11px;letter-spacing:.7px;color:#b09477;font-weight:400}
+.about-values-accordion summary:after{content:'+';font-size:21px;font-weight:400;color:#a08369;margin-left:auto;transition:transform .2s ease}
+.about-values-accordion details[open] summary:after{transform:rotate(45deg)}
+.page-about .about-values-accordion p{font-size:13px;line-height:1.9;padding:0 24px 27px 35px;max-width:530px}
+.about-invitation{position:relative;isolation:isolate;min-height:500px;display:flex;align-items:center;justify-content:center;text-align:center;background:#392c25;color:white}
+.about-invitation:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(#282019bf,#282019cf),url('assets/about/gathering.jpg') center 45%/cover no-repeat}
+.page-about .about-invitation .about-kicker{color:#e4c3a1}
+.page-about .about-invitation h2{font-size:clamp(43px,11.5vw,57px);letter-spacing:-1.8px}
+.page-about .about-invitation h2 em{color:#e8c8ab}
+.page-about .about-invitation p{color:#e4d6c8;font-size:14px;line-height:1.9;margin:25px 0 30px}
+.about-invitation-buttons{display:flex;gap:28px;align-items:center;justify-content:center}
+.page-about .about-invitation .button{background:#f7ecde;border-color:#f7ecde;color:#70513b}
+.about-light-link{color:#ead4bf;font-size:9px;letter-spacing:1px;border-bottom:1px solid #bd9e7c;padding:6px 0}
+.about-light-link:hover{text-decoration:none;color:#fff}
+.page-about dialog .about-room-photo{height:min(60vh,460px)}
+.page-about .site-footer{background:#f1e8db;border-color:#e1d1bd}
+.page-about .footer-grid p,.page-about .footer-grid h4,.page-about .footer-links a,.page-about .footer-contact div,.page-about .copyright{color:#8b7763}
+.page-about .back-to-top{background:#fff7eb;color:#8b6748;border-color:#c7ad90}
+.page-about .reading-progress{background:#a2755c}
+@media(hover:hover) and (pointer:fine){.about-role-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px #6c4b2d12}.about-role-card:hover img,.about-room-photo:hover img{transform:scale(1.045)}.about-process-tabs>button:hover .about-step-arrow{transform:translate(2px,-2px)}.about-values-accordion summary:hover{color:#a2755c}}
+@media(prefers-reduced-motion:no-preference){.about-hero-copy{animation:hero-arrive 1s var(--ease-out) both}.about-hero-media{animation:hero-arrive 1.15s var(--ease-out) .12s both}.about-hero-note{animation:gentle-float 6s ease-in-out 1.6s 2}.about-values-accordion details[open]>p{animation:panel-reveal .35s var(--ease-out)}}
+@media(min-width:1441px){.page-about .container{max-width:none;padding-left:max(64px,calc((100vw - 1312px)/2));padding-right:max(64px,calc((100vw - 1312px)/2))}}
+@media(max-width:1100px){
+ .page-about .container{padding-left:32px;padding-right:32px}
+ .page-about .about-section{padding-top:66px;padding-bottom:66px}
+ .about-hero{gap:44px;padding-top:62px;padding-bottom:72px}
+ .about-hero-media{height:460px}
+ .about-hero-note{left:-20px;padding:20px}
+ .about-hero-note strong{font-size:21px}
+ .about-story{column-gap:56px}
+ .about-philosophy{gap:50px}
+ .about-philosophy-photo{height:520px}
+ .about-section-heading{gap:40px}
+ .about-role-photo{height:250px}
+ .about-role-copy{padding:23px 20px}
+ .about-role-copy h3{font-size:18px}
+ .about-sourcing{gap:55px}
+ .about-market-inset{width:170px;height:180px;left:-26px}
+ .about-market-inset img{height:140px}
+ .about-market-inset>span{font-size:6px;margin-top:9px}
+ .about-process-layout{grid-template-columns:290px 1fr;gap:28px}
+ .about-process-tabs>button{padding:22px 16px;gap:12px}
+ .about-process-tabs strong{font-size:13px}
+ .about-process-tabs small{font-size:9px}
+ .about-process-caption{padding:23px;gap:18px}
+ .about-values{gap:60px}
+ .page-about h2{font-size:37px}
+}
+@media(max-width:800px){
+ .page-about .header-inner{height:110px;flex-wrap:wrap;padding-top:12px;padding-bottom:0;gap:12px;align-content:center}
+ .page-about .nav{order:3;width:100%;padding:0;border:0;justify-content:space-between}
+ .page-about .nav a{padding:12px 0}
+ .about-hero{gap:30px}
+ .page-about .about-hero h1{font-size:49px;letter-spacing:-1.4px}
+ .about-hero-copy>p{font-size:13px}
+ .about-hero-media{height:400px}
+ .about-hero-note{left:-12px;padding:16px}
+ .about-hero-note>span{font-size:6px}
+ .about-hero-note strong{font-size:17px}
+ .about-vertical-label{right:-18px;font-size:7px}
+ .about-hero-links{gap:15px;margin-top:30px}
+ .about-hero-links a{font-size:6px}
+ .about-story{gap:35px}
+ .about-story-body{padding-top:25px}
+ .page-about .about-lead{font-size:18px}
+ .about-story-photo{height:300px}
+ .about-philosophy{grid-template-columns:1fr;gap:38px}
+ .about-philosophy-photo{height:420px}
+ .about-philosophy-copy>p{max-width:none}
+ .about-section-heading{align-items:flex-start;gap:24px}
+ .about-section-heading>p{max-width:310px;font-size:12px}
+ .about-people-grid{gap:17px}
+ .about-role-photo{height:200px}
+ .about-role-copy{padding:20px 16px}
+ .about-role-copy>span{font-size:6px;letter-spacing:1px}
+ .about-role-copy h3{font-size:17px}
+ .page-about .about-role-copy p{font-size:11px}
+ .about-sourcing{grid-template-columns:1fr;gap:44px}
+ .about-sourcing-copy>p{max-width:none}
+ .about-sourcing-photo{height:400px;margin-left:20px;margin-right:0;margin-bottom:22px}
+ .about-market-inset{left:-20px;width:180px;height:190px}
+ .about-market-inset img{height:150px}
+ .about-process-layout{grid-template-columns:1fr;gap:25px}
+ .about-process-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .about-process-tabs>button{padding:17px}
+ .about-process-tabs small{font-size:8px}
+ .about-process-image{height:380px}
+ .about-room-photo{height:400px}
+ .about-space-notes{gap:25px}
+ .about-space-notes>div>span{font-size:7px}
+ .about-values{gap:40px}
+ .about-values-accordion summary{font-size:15px;gap:12px;padding:23px 0}
+ .page-about .about-values-accordion p{font-size:12px;padding-left:24px;padding-right:0}
+ .page-about .about-invitation h2{font-size:50px}
+}
+@media(max-width:560px){
+ .page-about .container{padding-left:22px;padding-right:22px}
+ .page-about .header-inner{height:104px;padding-top:10px}
+ .page-about .header-actions button{font-size:8px;padding:9px 12px}
+ .page-about .header-actions .profile{padding:0}
+ .page-about .logo small{font-size:6px;letter-spacing:.8px}
+ .page-about .about-section{padding-top:50px;padding-bottom:50px}
+ .page-about .about-kicker{font-size:8px;letter-spacing:1.7px;margin-bottom:16px}
+ .page-about h2{font-size:34px;letter-spacing:-1.1px}
+ .page-about p{font-size:13px}
+ .about-hero{grid-template-columns:1fr;gap:38px;padding-top:44px;padding-bottom:46px}
+ .page-about .about-hero h1{font-size:57px;letter-spacing:-1.8px}
+ .about-hero-copy>p{font-size:14px;margin:23px 0 26px}
+ .about-hero-links{gap:24px;margin-top:28px}
+ .about-hero-links a{font-size:7px}
+ .about-hero-media{height:390px;margin-right:14px}
+ .about-hero-note{left:15px;bottom:24px;padding:20px 24px}
+ .about-hero-note>span{font-size:7px}
+ .about-hero-note strong{font-size:21px}
+ .about-story{grid-template-columns:1fr;gap:25px}
+ .about-story-body{padding-top:0}
+ .page-about .about-lead{font-size:21px;max-width:350px}
+ .about-story-photo{height:280px}
+ .about-story-photo figcaption{left:12px;bottom:15px;font-size:13px;padding:10px 12px}
+ .about-philosophy-photo{height:350px}
+ .about-photo-tag{left:15px;bottom:15px;font-size:7px;padding:11px 14px}
+ .about-section-heading{display:block;margin-bottom:28px}
+ .about-section-heading>p{margin-top:22px;max-width:none;font-size:13px}
+ .about-people-grid{grid-template-columns:1fr;gap:28px}
+ .about-role-photo{height:300px}
+ .about-role-copy{padding:25px 23px}
+ .about-role-copy>span{font-size:8px;letter-spacing:1.4px}
+ .about-role-copy h3{font-size:21px}
+ .page-about .about-role-copy p{font-size:13px}
+ .about-sourcing-photo{height:350px;margin-bottom:25px}
+ .about-market-inset{width:155px;height:170px;bottom:-25px}
+ .about-market-inset img{height:132px}
+ .about-market-inset>span{font-size:5px;letter-spacing:.7px}
+ .about-process-tabs{gap:8px}
+ .about-process-tabs>button{padding:15px 11px;gap:8px}
+ .about-step-number{font-size:16px;min-width:20px}
+ .about-process-tabs strong{font-size:11px}
+ .about-process-tabs small{font-size:7px;line-height:1.4}
+ .about-step-arrow{display:none}
+ .about-process-image{height:280px}
+ .about-process-caption{gap:14px;padding:22px 20px}
+ .about-process-caption>span{font-size:8px}
+ .about-process-caption h3{font-size:19px}
+ .page-about .about-process-caption p{font-size:12px}
+ .about-room-photo{height:330px}
+ .about-room-photo>span{right:14px;bottom:14px;font-size:7px;padding:10px 13px}
+ .about-space-notes{grid-template-columns:1fr;gap:20px;padding-top:24px}
+ .about-space-notes>div{border-bottom:1px solid var(--line);padding-bottom:18px}
+ .about-space-notes>div:last-child{border:0;padding-bottom:0}
+ .about-space-notes>div>span{font-size:8px;margin-bottom:8px}
+ .about-values{grid-template-columns:1fr;gap:22px}
+ .about-values-photo{height:250px;max-width:none}
+ .about-values-accordion{padding-top:0}
+ .about-values-accordion summary{font-size:17px;padding:23px 0;gap:18px}
+ .page-about .about-values-accordion p{font-size:13px;padding-left:30px}
+ .about-invitation{min-height:470px}
+ .page-about .about-invitation h2{font-size:46px}
+ .page-about .about-invitation p{font-size:13px}
+ .about-invitation-buttons{flex-direction:column;gap:20px}
+}
