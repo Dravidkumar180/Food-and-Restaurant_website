@@ -13,7 +13,11 @@
   const phone=fields.phone.value.trim(),digits=phone.replace(/\D/g,'');fields.phone.setCustomValidity(!phone||digits.length>=7&&digits.length<=15&&!/[A-Za-z]/.test(phone)?'':t('Enter a phone number with 7 to 15 digits.'));
  }
  form.addEventListener('input',()=>{status.textContent='';status.hidden=true;if(signup)validate();});
- form.addEventListener('submit',event=>{event.preventDefault();validate();if(!form.reportValidity())return;status.textContent=t(signup?'Your details passed validation. Account services are not connected, so no account was created.':'Your details passed validation. Account services are not connected, so you have not been signed in.');status.hidden=false;status.setAttribute('tabindex','-1');status.focus({preventScroll:true});fields.password.value='';fields.password.type='password';if(signup){fields.confirmPassword.value='';fields.confirmPassword.type='password';fields.confirmPassword.setCustomValidity('');fields.confirmPassword.setAttribute('aria-invalid','false');document.querySelector('#confirm-password-error').textContent='';}toggles.forEach(updateToggle);});
+ form.addEventListener('submit',event=>{event.preventDefault();validate();if(!form.reportValidity())return;
+  const email=fields.email.value.trim(),name=signup?fields.fullName.value.trim():email.split('@')[0].replace(/[._-]+/g,' ').slice(0,60);
+  fields.password.value='';fields.password.type='password';if(signup){fields.confirmPassword.value='';fields.confirmPassword.type='password';fields.confirmPassword.setCustomValidity('');fields.confirmPassword.setAttribute('aria-invalid','false');document.querySelector('#confirm-password-error').textContent='';}toggles.forEach(updateToggle);
+  try{sessionStorage.setItem('foodiehub-demo-profile-v1',JSON.stringify({name,email,createdAt:Date.now()}));window.location.assign('dashboard.html');}catch{status.textContent=t('Enable session storage to open your demo dashboard. No password has been saved.');status.hidden=false;status.setAttribute('tabindex','-1');status.focus({preventScroll:true});}
+ });
  window.addEventListener('foodiehub:languagechange',()=>{toggles.forEach(updateToggle);if(signup&&fields.confirmPassword.value)validate();});
  document.querySelector('#account-fields').disabled=false;
 })();
