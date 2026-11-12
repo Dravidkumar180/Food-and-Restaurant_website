@@ -1,0 +1,2 @@
+Official Stackly wordmark: https://www.thestackly.com/assets/imgs/logo-stackly%20%281%29.png
+The website styles this transparent official asset in the blue of the supplied reference, with a white footer variant.

@@ -39,10 +39,10 @@
   }));
   document.querySelector('#save-offer-plan').addEventListener('click',()=>{
     const p=amounts();
-    try{localStorage.setItem('foodiehub-offer-plan',JSON.stringify({id:p.bundle.id,quantity:p.count,code:appliedCode}));if(typeof notify==='function')notify('Your offer plan is saved on this device.');}
+    try{localStorage.setItem('stackly-offer-plan',JSON.stringify({id:p.bundle.id,quantity:p.count,code:appliedCode}));if(typeof notify==='function')notify('Your offer plan is saved on this device.');}
     catch{if(typeof notify==='function')notify('This browser could not save your plan. You can still use the enquiry link.');}
   });
-  try{const saved=JSON.parse(localStorage.getItem('foodiehub-offer-plan')||'null');if(saved&&bundles.some(b=>b.id===saved.id)){choice.value=saved.id;quantity.value=String(Math.max(1,Math.min(6,Number.parseInt(saved.quantity,10)||1)));if(saved.code==='TOGETHER10'){code.value=saved.code;appliedCode=saved.code;status.textContent='Saved plan restored with its planner code.'}else status.textContent='Your saved table plan is restored.'}}
+  try{const saved=JSON.parse(localStorage.getItem('stackly-offer-plan')||'null');if(saved&&bundles.some(b=>b.id===saved.id)){choice.value=saved.id;quantity.value=String(Math.max(1,Math.min(6,Number.parseInt(saved.quantity,10)||1)));if(saved.code==='TOGETHER10'){code.value=saved.code;appliedCode=saved.code;status.textContent='Saved plan restored with its planner code.'}else status.textContent='Your saved table plan is restored.'}}
   catch{/* A blocked or outdated local save must not prevent planning. */}
   window.addEventListener('foodiehub:languagechange',render);
   render();

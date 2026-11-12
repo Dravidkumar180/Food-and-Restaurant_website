@@ -1,7 +1,7 @@
 /* Complete local translations: no runtime translation service or framework. */
 (() => {
  'use strict';
- const catalogs=window.FOODIEHUB_TRANSLATIONS||{},control=document.querySelector('#header-language-button');
+ const catalogs=window.STACKLY_TRANSLATIONS||{},control=document.querySelector('#header-language-button');
  if(!control&&!document.querySelector('#account-form')&&!document.querySelector('[data-checkout-page]'))return;
  const normalize=value=>String(value).replace(/\s+/g,' ').trim();
  const textRecords=new WeakMap(),attributeRecords=new WeakMap();
@@ -41,7 +41,7 @@
   document.documentElement.lang=language;observe();
  }
  function setLanguage(code){language=Object.hasOwn(catalogs,code)?code:'en';let saved=true;try{localStorage.setItem('foodiehub-language',language);}catch{saved=false;}apply();window.dispatchEvent(new CustomEvent('foodiehub:languagechange',{detail:{language}}));return saved;}
- function translateDraft(draft){const labels=['Name','Email','Phone','Topic','Preferred date','Preferred time','Guests'],fixed=['FOODIEHUB — TABLE ENQUIRY','FOODIEHUB — MESSAGE','Request only — not sent or confirmed.','No additional notes.'];return draft.split('\n').map(line=>{const split=line.indexOf(':');if(split>=0){const label=normalize(line.slice(0,split)),source=labels.find(key=>key.toLowerCase()===label.toLowerCase())||reverse.get(label)||label;if(labels.includes(source))return translate(source)+':'+(source==='Topic'?' '+translate(line.slice(split+1)):line.slice(split+1));return line;}const source=fixed.includes(line)?line:reverse.get(normalize(line))||line;return fixed.includes(source)?translate(source):line;}).join('\n');}
+ function translateDraft(draft){const labels=['Name','Email','Phone','Topic','Preferred date','Preferred time','Guests'],fixed=['STACKLY — TABLE ENQUIRY','STACKLY — MESSAGE','Request only — not sent or confirmed.','No additional notes.'];return draft.split('\n').map(line=>{const split=line.indexOf(':');if(split>=0){const label=normalize(line.slice(0,split)),source=labels.find(key=>key.toLowerCase()===label.toLowerCase())||reverse.get(label)||label;if(labels.includes(source))return translate(source)+':'+(source==='Topic'?' '+translate(line.slice(split+1)):line.slice(split+1));return line;}const source=fixed.includes(line)?line:reverse.get(normalize(line))||line;return fixed.includes(source)?translate(source):line;}).join('\n');}
  window.siteI18n={t:translate,setLanguage,getLanguage:()=>language,translateDraft,refresh:apply};
  observer=new MutationObserver(()=>{if(!scheduled){scheduled=true;queueMicrotask(apply);}});
  window.addEventListener('storage',event=>{if(event.key==='foodiehub-language')setLanguage(event.newValue||'en');});
