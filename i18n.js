@@ -26,7 +26,7 @@
   return result;
  }
  function translate(value,code=language){const key=code+'\u0000'+normalize(value);if(!cache.has(key))cache.set(key,lookup(value,code));return cache.get(key);}
- function blocked(element,attributes=false){return !element||Boolean(element.closest('script,style,svg,'+(attributes?'':'textarea,')+'[data-no-translate],[translate="no"],#contact-review-text'));}
+ function blocked(element,attributes=false){return !element||Boolean(element.closest('script,style,svg,'+(attributes?'':'textarea,')+'[data-no-translate],[translate="no"],#contact-review-text,#cart-review-text'));}
  function updateText(node){if(blocked(node.parentElement)||!normalize(node.nodeValue))return;let record=textRecords.get(node);if(!record){record={source:node.nodeValue,last:node.nodeValue};textRecords.set(node,record);}else if(node.nodeValue!==record.last){record.source=reverse.get(normalize(node.nodeValue))||node.nodeValue;}
   const parts=record.source.match(/^(\s*)([\s\S]*?)(\s*)$/);const target=parts[1]+translate(parts[2])+parts[3];if(node.nodeValue!==target)node.nodeValue=target;record.last=target;
  }

@@ -1,0 +1,45 @@
+Cart illustrations: Pexels and Unsplash. Category photographs illustrate food styles rather than exact menu presentation.
+url = "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/burgers.jpg"
+next
+url = "https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/pizzas.jpg"
+next
+url = "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/pastas.jpg"
+next
+url = "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/bowls.jpg"
+next
+url = "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/grills.jpg"
+next
+url = "https://images.pexels.com/photos/725991/pexels-photo-725991.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/seafood.jpg"
+next
+url = "https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/desserts.jpg"
+next
+url = "https://images.pexels.com/photos/616833/pexels-photo-616833.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/drinks.jpg"
+next
+url = "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/small-plates.jpg"
+next
+url = "https://images.pexels.com/photos/3184190/pexels-photo-3184190.jpeg?auto=compress&cs=tinysrgb&w=1600"
+output = "assets/cart/hero.jpg"
+
+url = "https://images.pexels.com/photos/361184/pexels-photo-361184.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/grills.jpg"
+next
+url = "https://images.pexels.com/photos/302680/pexels-photo-302680.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/desserts.jpg"
+next
+url = "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800"
+output = "assets/cart/small-plates.jpg"
+
+url = "https://images.unsplash.com/photo-1432139555190-58524dae6a55?fm=jpg&fit=crop&w=800&q=85"
+output = "assets/cart/grills.jpg"
+next
+url = "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?fm=jpg&fit=crop&w=800&q=85"
+output = "assets/cart/desserts.jpg"

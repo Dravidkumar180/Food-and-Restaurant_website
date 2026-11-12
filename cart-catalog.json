@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Spiced Samosa Trio",
+    "description": "Golden pastry parcels with potato, garden peas, toasted cumin, and tangy tamarind chutney.",
+    "price": 240,
+    "category": "Small plates",
+    "categoryId": "small-plates",
+    "image": "assets/cart/small-plates.jpg",
+    "alt": "A warmly spiced dish with flatbread"
+  },
+  {
+    "name": "Rainbow Rice-paper Rolls",
+    "description": "Fresh vegetables and soft rice noodles, rolled by hand and served with a creamy sesame dipping sauce.",
+    "price": 280,
+    "category": "Small plates",
+    "categoryId": "small-plates",
+    "image": "assets/cart/small-plates.jpg",
+    "alt": "A warmly spiced dish with flatbread"
+  },
+  {
+    "name": "Smoked Pepper Double",
+    "description": "Twin grilled patties, pepper relish, melted cheese, crisp greens, and smoky house sauce.",
+    "price": 460,
+    "category": "Burgers",
+    "categoryId": "burgers",
+    "image": "assets/cart/burgers.jpg",
+    "alt": "A cheeseburger layered with tomato and green lettuce"
+  },
+  {
+    "name": "The Pickle & Cheddar",
+    "description": "A juicy beef patty with sharp cheddar, dill pickles, caramelised onion, and mustard mayonnaise.",
+    "price": 440,
+    "category": "Burgers",
+    "categoryId": "burgers",
+    "image": "assets/cart/burgers.jpg",
+    "alt": "A cheeseburger layered with tomato and green lettuce"
+  },
+  {
+    "name": "Chilli & Basil Wood-fired",
+    "description": "Roasted tomato sauce, creamy mozzarella, fresh basil, and a lively drizzle of chilli oil.",
+    "price": 510,
+    "category": "Wood-fired pizzas",
+    "categoryId": "pizzas",
+    "image": "assets/cart/pizzas.jpg",
+    "alt": "A freshly baked pizza topped with vegetables"
+  },
+  {
+    "name": "Spinach Pesto Thin-crust",
+    "description": "Tender spinach, basil pesto, mozzarella, and a touch of roasted garlic on a crisp thin base.",
+    "price": 550,
+    "category": "Wood-fired pizzas",
+    "categoryId": "pizzas",
+    "image": "assets/cart/pizzas.jpg",
+    "alt": "A freshly baked pizza topped with vegetables"
+  },
+  {
+    "name": "Olive & Herb Linguine",
+    "description": "Linguine tossed with olives, seasonal vegetables, parsley, and a glossy garlic-butter finish.",
+    "price": 470,
+    "category": "Pasta kitchen",
+    "categoryId": "pastas",
+    "image": "assets/cart/pastas.jpg",
+    "alt": "Penne in tomato sauce with basil"
+  },
+  {
+    "name": "Rustic Tomato Penne",
+    "description": "Penne folded through slow-cooked tomato sauce with roasted garlic, cracked pepper, and grated cheese.",
+    "price": 430,
+    "category": "Pasta kitchen",
+    "categoryId": "pastas",
+    "image": "assets/cart/pastas.jpg",
+    "alt": "Penne in tomato sauce with basil"
+  },
+  {
+    "name": "Avocado Crunch Bowl",
+    "description": "Creamy avocado, chickpeas, crisp greens, cherry tomatoes, and toasted seeds with lemon dressing.",
+    "price": 390,
+    "category": "Garden & grain bowls",
+    "categoryId": "bowls",
+    "image": "assets/cart/bowls.jpg",
+    "alt": "A leafy salad with a creamy dressing"
+  },
+  {
+    "name": "Harvest Breakfast Bowl",
+    "description": "Soft egg, avocado, roasted vegetables, and leafy greens with a bright herb dressing.",
+    "price": 420,
+    "category": "Garden & grain bowls",
+    "categoryId": "bowls",
+    "image": "assets/cart/bowls.jpg",
+    "alt": "A leafy salad with a creamy dressing"
+  },
+  {
+    "name": "Slow-glazed Barbecue Ribs",
+    "description": "Tender ribs brushed with a sticky barbecue glaze, accompanied by crisp fries and grilled vegetables.",
+    "price": 790,
+    "category": "From the grill",
+    "categoryId": "grills",
+    "image": "assets/cart/grills.jpg",
+    "alt": "A grilled main with vegetables and potatoes"
+  },
+  {
+    "name": "Pepper-crusted Striploin",
+    "description": "Flame-grilled steak, sliced to serve, with black pepper jus and a side of seasonal vegetables.",
+    "price": 890,
+    "category": "From the grill",
+    "categoryId": "grills",
+    "image": "assets/cart/grills.jpg",
+    "alt": "A grilled main with vegetables and potatoes"
+  },
+  {
+    "name": "Lemon-roasted Salmon",
+    "description": "A salmon fillet with lemon, fragrant herbs, and tender seasonal vegetables.",
+    "price": 720,
+    "category": "Coastal favourites",
+    "categoryId": "seafood",
+    "image": "assets/cart/seafood.jpg",
+    "alt": "A roasted fish fillet with lemon and greens"
+  },
+  {
+    "name": "Garden Herb Fish Fillet",
+    "description": "Gently seared fish on a bed of green vegetables with a rich, savoury herb sauce.",
+    "price": 680,
+    "category": "Coastal favourites",
+    "categoryId": "seafood",
+    "image": "assets/cart/seafood.jpg",
+    "alt": "A roasted fish fillet with lemon and greens"
+  },
+  {
+    "name": "Chocolate Celebration Slice",
+    "description": "A generous slice of layered chocolate cake, finished with chocolate cream and a glossy ganache.",
+    "price": 320,
+    "category": "The sweet finish",
+    "categoryId": "desserts",
+    "image": "assets/cart/desserts.jpg",
+    "alt": "Freshly baked chocolate chip cookies"
+  },
+  {
+    "name": "Cookies & Cream Sundae",
+    "description": "Vanilla ice cream, crushed chocolate cookies, and rich chocolate sauce, layered into a tall sundae.",
+    "price": 290,
+    "category": "The sweet finish",
+    "categoryId": "desserts",
+    "image": "assets/cart/desserts.jpg",
+    "alt": "Freshly baked chocolate chip cookies"
+  },
+  {
+    "name": "Lime & Mint Fizz",
+    "description": "Fresh lime, muddled mint, and sparkling soda over ice. Bright, simple, and wonderfully refreshing.",
+    "price": 210,
+    "category": "Sips & refreshers",
+    "categoryId": "drinks",
+    "image": "assets/cart/drinks.jpg",
+    "alt": "Green fruit and vegetable drinks in glass jars"
+  },
+  {
+    "name": "Mango Citrus Spritz",
+    "description": "Mango and fresh citrus lifted with soda and a fragrant orange finish.",
+    "price": 240,
+    "category": "Sips & refreshers",
+    "categoryId": "drinks",
+    "image": "assets/cart/drinks.jpg",
+    "alt": "Green fruit and vegetable drinks in glass jars"
+  },
+  {
+    "name": "CLASSIC BURGER",
+    "price": 299,
+    "description": "The classic burger selection from the home page.",
+    "category": "Burgers",
+    "categoryId": "burgers",
+    "image": "assets/cart/burgers.jpg",
+    "alt": "A cheeseburger layered with tomato and green lettuce"
+  },
+  {
+    "name": "MARGHERITA PIZZA",
+    "price": 449,
+    "description": "The margherita pizza selection from the home page.",
+    "category": "Wood-fired pizzas",
+    "categoryId": "pizzas",
+    "image": "assets/cart/pizzas.jpg",
+    "alt": "A freshly baked pizza topped with vegetables"
+  },
+  {
+    "name": "CREAMY PASTA",
+    "price": 389,
+    "description": "The creamy pasta selection from the home page.",
+    "category": "Pasta kitchen",
+    "categoryId": "pastas",
+    "image": "assets/cart/pastas.jpg",
+    "alt": "Penne in tomato sauce with basil"
+  },
+  {
+    "name": "CRISPY CHICKEN",
+    "price": 349,
+    "description": "The chicken selection from the home page.",
+    "category": "From the grill",
+    "categoryId": "grills",
+    "image": "assets/cart/grills.jpg",
+    "alt": "A grilled main with vegetables and potatoes"
+  },
+  {
+    "name": "FAMILY FEAST",
+    "price": 1499,
+    "description": "The family sharing selection from the home page.",
+    "category": "Small plates",
+    "categoryId": "small-plates",
+    "image": "assets/cart/small-plates.jpg",
+    "alt": "A warmly spiced dish with flatbread"
+  },
+  {
+    "name": "WEEKEND SPECIAL",
+    "price": 899,
+    "description": "The weekend sharing selection from the home page.",
+    "category": "From the grill",
+    "categoryId": "grills",
+    "image": "assets/cart/grills.jpg",
+    "alt": "A grilled main with vegetables and potatoes"
+  }
+]
