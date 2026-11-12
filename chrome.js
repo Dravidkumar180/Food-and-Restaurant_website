@@ -2,10 +2,12 @@
  'use strict';
  const header=document.querySelector('.site-chrome'),nav=document.querySelector('#primary-navigation'),toggle=document.querySelector('.chrome-menu-toggle'),discover=document.querySelector('.header-discover');
  if(!header||!nav||!toggle)return;
- const mobile=matchMedia('(max-width: 1000px)'),motion=matchMedia('(prefers-reduced-motion: reduce)');
+ const mobile=matchMedia('(max-width: 1200px)'),motion=matchMedia('(prefers-reduced-motion: reduce)');
  function setMenu(open,returnFocus=false){header.classList.toggle('menu-open',open);toggle.setAttribute('aria-expanded',String(open));toggle.querySelector('.chrome-menu-label').textContent=open?'CLOSE':'MENU';if(open&&discover)discover.open=false;if(returnFocus)toggle.focus();}
  // The expanded navigation remains available if JavaScript is disabled.
  toggle.hidden=false;header.classList.add('chrome-ready');
+ function measureHeader(){document.documentElement.style.setProperty('--site-header-height',Math.ceil(header.getBoundingClientRect().height)+'px');}
+ measureHeader();if('ResizeObserver' in window)new ResizeObserver(measureHeader).observe(header);else window.addEventListener('resize',measureHeader);
  toggle.addEventListener('click',()=>setMenu(toggle.getAttribute('aria-expanded')!=='true'));
  nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMenu(false)));
  document.addEventListener('click',event=>{if(!header.contains(event.target)){setMenu(false);if(discover)discover.open=false;}});
